@@ -8,7 +8,7 @@ defaultContentLanguage = "en"
 # Enable comments by entering your Disqus shortname
 disqusShortname = "devcows"
 # Enable Google Analytics by entering your tracking code
-googleAnalytics = ""
+googleAnalytics = "UA-111775978-1"
 
 # Define the number of posts per page
 paginate = 10
@@ -21,51 +21,51 @@ canonifyurls = true
 # Main menu
 
 [[menu.main]]
-    name = "Home"
-    url  = "/"
-    weight = 1
+#    name = "Home"
+#    url  = "/"
+#    weight = 1
 
 [[menu.main]]
-    name = "ブログ"
-    url  = "/blogs/"
-    weight = 2
+#    name = "ブロ"
+#    url  = "/blogs/"
+#    weight = 2
 
 [[menu.main]]
-    name = "FAQ"
-    identifier = "faq"
-    url  = "/faq/"
-    weight = 3
+#    name = "FAQ"
+#    identifier = "faq"
+#    url  = "/faq/"
+#    weight = 3
 
 [[menu.main]]
-    name = "Contact"
-    url  = "/contact/"
-    weight = 4
+#    name = "Contact"
+#    url  = "/contact/"
+#    weight = 4
 
 # Top bar social links menu
 
 [[menu.topbar]]
-    weight = 1
-    name = "GitHub"
-    url = "https://github.com/devcows/hugo-universal-theme"
-    pre = "<i class='fa fa-2x fa-github'></i>"
+#    weight = 1
+#    name = "GitHub"
+#    url = "https://github.com/devcows/hugo-universal-theme"
+#    pre = "<i class='fa fa-2x fa-github'></i>"
 
 [[menu.topbar]]
-    weight = 2
-    name = "Facebook"
-    url = "http://facebook.com"
-    pre = "<i class='fa fa-2x fa-facebook'></i>"
+#    weight = 2
+#    name = "Facebook"
+#    url = "http://facebook.com"
+#    pre = "<i class='fa fa-2x fa-facebook'></i>"
 
 [[menu.topbar]]
-    weight = 3
-    name = "Twitter"
-    url = "http://twitter.com"
-    pre = "<i class='fa fa-2x fa-twitter'></i>"
+#    weight = 3
+#    name = "Twitter"
+#    url = "http://twitter.com"
+#    pre = "<i class='fa fa-2x fa-twitter'></i>"
 
 [[menu.topbar]]
-    weight = 4
-    name = "Email"
-    url = "mailto:your@email.com"
-    pre = "<i class='fa fa-2x fa-envelope'></i>"
+#    weight = 4
+#    name = "Email"
+#    url = "mailto:your@email.com"
+#    pre = "<i class='fa fa-2x fa-envelope'></i>"
 
 [params]
     viewMorePostLink = "/blog/"
@@ -74,10 +74,10 @@ canonifyurls = true
     defaultDescription = "Site template made by devcows using hugo"
 
     # Google Maps API key (if not set will default to not passing a key.)
-    googleMapsApiKey = "AIzaSyCFhtWLJcE30xOAjcbSFi-0fnoVmQZPb1Y"
+    googleMapsApiKey = "AIzaSyD6r7uzc0ZwD885VedNmXb1m2RjgM6kZOI"
 
     # Style options: default (light-blue), blue, green, marsala, pink, red, turquoise, violet
-    style = "green"
+    style = "blue"
 
     # Since this template is static, the contact form uses www.formspree.io as a
     # proxy. The form makes a POST request to their servers to send the actual
@@ -92,17 +92,17 @@ canonifyurls = true
     # - you're done. Happy mailing!
     #
     # Enable the contact form by entering your Formspree.io email
-    email = "your@email.com"
+    email = "bluepaws2018@gmail.com"
 
     about_us = "<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>"
-    copyright = "Copyright (c) 2015 - 2016, YourCompany; all rights reserved."
+    copyright = "Copyright (c) 2018, YourCompany; all rights reserved."
 
     # Format dates with Go's time formatting
     date_format = "January 2, 2006"
 
-    logo = "img/logo.png"
+    logo = "img/bluepaws-logo.png"
     address = """<p><strong>Universal Ltd.</strong>
-        <br>13/25 New Avenue
+        <br>13/26 New Avenue
         <br>Newtown upon River
         <br>45Y 73J
         <br>England
@@ -110,8 +110,9 @@ canonifyurls = true
         <strong>Great Britain</strong>
       </p>
       """
-    latitude = "-12.043333"
-    longitude = "-77.028333"
+    latitude = "35.315133"
+    longitude = "139.486057"
+    direction = "藤沢市片瀬3-1-29"
 
 [Permalinks]
     blog = "/blog/:year/:month/:day/:filename/"
@@ -119,9 +120,9 @@ canonifyurls = true
 # Enable or disable top bar with social icons
 [params.topbar]
     enable = true
-    text = """<p class="hidden-sm hidden-xs">Contact us on +420 777 555 333 or hello@universal.com.</p>
-      <p class="hidden-md hidden-lg"><a href="#" data-animate-hover="pulse"><i class="fa fa-phone"></i></a>
-      <a href="#" data-animate-hover="pulse"><i class="fa fa-envelope"></i></a>
+    text = """<p class="hidden-sm hidden-xs">ご予約・お問合せ先 tel:050-3196-3129 / bluepaws2018@gmail.com</p>
+      <p class="hidden-md hidden-lg"><a href="tel:050-3196-3129" data-animate-hover="pulse"><i class="fa fa-phone"></i></a>
+      <a href="mailto:bluepaws2018@gmail.com" data-animate-hover="pulse"><i class="fa fa-envelope"></i></a>
       </p>
       """
 
@@ -132,13 +133,13 @@ canonifyurls = true
     search = true
 
 [params.carousel]
-    enable = true
+    enable = false
     # All carousel items are defined in their own files. You can find example items
     # at 'exampleSite/data/carousel'.
     # For more informtion take a look at the README.
 
 [params.features]
-    enable = true
+    enable = false
     # All features are defined in their own files. You can find example items
     # at 'exampleSite/data/features'.
     # For more informtion take a look at the README.

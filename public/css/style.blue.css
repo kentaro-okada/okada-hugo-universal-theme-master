@@ -428,12 +428,12 @@ ul.list-style-none {
 .navbar .yamm-fw .dropdown-menu {
   padding: 0;
 }
-.navbar .navbar-buttons {
+#.navbar .navbar-buttons {
   float: right;
 }
-.navbar .navbar-buttons button,
-.navbar .navbar-buttons a.btn,
-.navbar .navbar-buttons .btn-default.navbar-toggle {
+#.navbar .navbar-buttons button,
+#.navbar .navbar-buttons a.btn,
+#.navbar .navbar-buttons .btn-default.navbar-toggle {
   margin-top: 11px;
   margin-bottom: 11px;
   margin-left: 0;
