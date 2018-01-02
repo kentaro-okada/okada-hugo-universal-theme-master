@@ -1,10 +1,10 @@
 baseurl = "https://bluepaws.jp/"
-title = "Universal Okadas"
+title = "ドッグサロン-BLUE PAWS 藤沢市片瀬"
 theme = "hugo-universal-theme-master"
 themesDir = "/themes"
 languageCode = "ja"
 # Site language. Available translations in the theme's `/i18n` directory.
-defaultContentLanguage = "en"
+defaultContentLanguage = "ja"
 # Enable comments by entering your Disqus shortname
 disqusShortname = "devcows"
 # Enable Google Analytics by entering your tracking code
