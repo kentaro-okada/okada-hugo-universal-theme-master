@@ -109,6 +109,7 @@ canonifyurls = true
     logo = "/img/logo-small.svg"
     address = """<p><strong>BLUE PAWS</strong>
         <br>神奈川県藤沢市片瀬3-1-29
+        <br>ご予約・お問合せ先<a href="tel:050-3196-3129" data-animate-hover="pulse"><i class="fa fa-phone"></i>TEL:050-3196-3129</a>
       </p>
       """
     latitude = "35.315133"
@@ -140,7 +141,7 @@ canonifyurls = true
     # For more informtion take a look at the README.
 
 [params.features]
-    enable = true
+    enable = false
     # All features are defined in their own files. You can find example items
     # at 'exampleSite/data/features'.
     # For more informtion take a look at the README.
@@ -160,6 +161,9 @@ canonifyurls = true
     subtitle = "We have prepared for you more than 40 different HTML pages, including 5 variations of homepage."
     link_url = "#"
     link_text = "Check other homepages"
+
+[params.course]
+    enable = true
 
 [params.intro]
     enable = true

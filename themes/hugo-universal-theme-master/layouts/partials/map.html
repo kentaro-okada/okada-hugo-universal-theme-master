@@ -1,5 +1,9 @@
 {{ if isset .Site.Params "latitude" }}
   {{ if isset .Site.Params "longitude" }}
+<section class="bar background-white no-mb">
+      <h3 class="text-uppercase text-center">アクセス</h3>
+      <p class="text-center">神奈川県藤沢市片瀬3-1-29</p>
+      <p class="text-center">※下の地図の<i class="fa fa-map-marker"></i>アイコンをクリックすると、地図のルート検索ができます</p>
       <div class="hidden">
         <input id="gmap-lat" value="{{ .Site.Params.latitude }}" />
         <input id="gmap-lng" value="{{ .Site.Params.longitude }}" />
@@ -13,3 +17,4 @@
       <div id="map" />
   {{ end }}
 {{ end }}
+</section>

@@ -1,23 +1,67 @@
-
-  <table id="pricelist">
-    <thead>
-      <tr>
-      <th>犬種</th>
-      <th>マイクロバブルシャンプーコース</th>
-      <th>マイクロバブルシャンプー＆カットコース</th>
-      <th>2週コース(1ヶ月料金)</th>
-      </tr>
-    </thead>
-    <tbody>
-    {{ $url := "/static/csv/data.csv" }}
-    {{ $sep := "," }}
-    {{ range $i, $r := getCSV $sep $url }}
-      <tr>
-        <td>{{ index $r 0 }}</td>
-        <td>{{ index $r 1 }}</td>
-        <td>{{ index $r 2 }}</td>
-        <td>{{ index $r 3 }}</td>
-      </tr>
-    {{ end }}
-    </tbody>
-  </table>
+<section class="background-white no-mb no-pb">
+    <div class="container">
+      <h3 class="text-uppercase text-center">犬種別トリミング料金</h3>
+      <table>
+        <thead class="text-uppercase">
+          <tr>
+          <th>犬種</th>
+          <th>マイクロバブルシャンプーコース</th>
+          <th>マイクロバブルシャンプー＆カットコース</th>
+          <th>2週コース(1ヶ月料金)</th>
+          </tr>
+        </thead>
+        <tbody>
+        {{ $url := "/static/csv/data.csv" }}
+        {{ $sep := "," }}
+        {{ range $i, $r := getCSV $sep $url }}
+          <tr>
+            <td>{{ index $r 0 }}</td>
+            <td>{{ index $r 1 }}</td>
+            <td>{{ index $r 2 }}</td>
+            <td>{{ index $r 3 }}</td>
+          </tr>
+        {{ end }}
+        </tbody>
+         <thead class="text-uppercase">
+          <tr>
+          <th>犬種</th>
+          <th>マイクロバブルシャンプーコース</th>
+          <th>マイクロバブルシャンプー＆カットコース</th>
+          <th>2週コース(1ヶ月料金)</th>
+          </tr>
+        </thead>
+        <tbody>
+        {{ $url := "/static/csv/data2.csv" }}
+        {{ $sep := "," }}
+        {{ range $i, $r := getCSV $sep $url }}
+          <tr>
+            <td>{{ index $r 0 }}</td>
+            <td>{{ index $r 1 }}</td>
+            <td>{{ index $r 2 }}</td>
+            <td>{{ index $r 3 }}</td>
+          </tr>
+        {{ end }}
+        </tbody>   
+        <thead class="text-uppercase">
+          <tr>
+          <th>犬種</th>
+          <th>マイクロバブルシャンプーコース</th>
+          <th>マイクロバブルシャンプー＆カットコース</th>
+          <th>2週コース(1ヶ月料金)</th>
+          </tr>
+        </thead>
+        <tbody>
+        {{ $url := "/static/csv/data3.csv" }}
+        {{ $sep := "," }}
+        {{ range $i, $r := getCSV $sep $url }}
+          <tr>
+            <td>{{ index $r 0 }}</td>
+            <td>{{ index $r 1 }}</td>
+            <td>{{ index $r 2 }}</td>
+            <td>{{ index $r 3 }}</td>
+          </tr>
+        {{ end }}
+        </tbody>
+      </table>
+    </div>
+</section>

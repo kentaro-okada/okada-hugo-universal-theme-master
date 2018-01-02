@@ -9,39 +9,34 @@
   min-height: 230px;
 }
 
+/* section */
+
+.no-pb {
+padding-bottom: 0px;
+}
+
 /* table */
 
 table {
     border-top: 1px solid gray;
     border-right: 1px solid gray;
-    width: 640px;
+    width: auto;
     border-spacing: 0;
     margin: 0 auto;
 }
-th, td {
+td {
     border-bottom: 1px solid gray;
     border-left: 1px solid gray;
     text-align: center;
     padding: 5px;
 }
-th { background-color: navy; color: #fff;}
-
-
-// Horizontal
-table {
-  > thead {
-    float: left;
-  }
-  > tbody {
-    > tr {
-      display: inline-block;
-      vertical-align: top;
-    }
-  }
+th { 
+	background-color: navy; color: #fff;
+    border-bottom: 1px solid gray;
+    border-left: 1px solid gray;
+    text-align: center;
+	padding: 10px;
 }
 
-#pricelist {
-  overflow-x: auto;
-  width: auto;
-}
+
 
