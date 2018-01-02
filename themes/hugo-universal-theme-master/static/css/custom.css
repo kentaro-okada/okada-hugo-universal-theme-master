@@ -26,10 +26,22 @@ th, td {
 }
 th { background-color: navy; color: #fff;}
 
-#pricelist {
-    box-sizing: border-box;
-    border-right: 1px solid gray;
-    overflow-x: scroll;
-    -webkit-overflow-scrolling: touch;
+
+// Horizontal
+table {
+  > thead {
+    float: left;
+  }
+  > tbody {
+    > tr {
+      display: inline-block;
+      vertical-align: top;
+    }
+  }
 }
-#pricelist table { border-right: none;}
+
+#pricelist {
+  overflow-x: auto;
+  width: auto;
+}
+
