@@ -1,0 +1,14 @@
+
+<table>
+  <tbody>
+  {{ with .Get "src" }}
+    {{ range $i, $r := getCSV "," . }}
+    <tr>
+      {{ if eq $i 0}} {{range $r}}  <th> {{ . }} </th>{{ end }}
+      {{ else }} {{range $r}}  <td> {{ . }} </td>{{ end }}
+      {{ end }}
+    </tr>
+    {{ end }}
+  {{ end }}
+  </tbody>
+</table>

@@ -8,3 +8,28 @@
 .box-simple {
   min-height: 230px;
 }
+
+/* table */
+
+table {
+    border-top: 1px solid gray;
+    border-right: 1px solid gray;
+    width: 640px;
+    border-spacing: 0;
+    margin: 0 auto;
+}
+th, td {
+    border-bottom: 1px solid gray;
+    border-left: 1px solid gray;
+    text-align: center;
+    padding: 5px;
+}
+th { background-color: navy; color: #fff;}
+
+#pricelist {
+    box-sizing: border-box;
+    border-right: 1px solid gray;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+#pricelist table { border-right: none;}

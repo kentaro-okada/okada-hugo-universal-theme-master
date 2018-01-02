@@ -140,7 +140,7 @@ canonifyurls = true
     # For more informtion take a look at the README.
 
 [params.features]
-    enable = false
+    enable = true
     # All features are defined in their own files. You can find example items
     # at 'exampleSite/data/features'.
     # For more informtion take a look at the README.
@@ -166,6 +166,7 @@ canonifyurls = true
     icon = "fa fa-flag-o"
     title = "ドッグサロン BLUE PAWS 2018/1/11 オープン"
     subtitle = "BLUE PAWSはイヌのキモチを大切にします。イヌとヒトの素敵な毎日のためにBLUE PAWSを。"
+    subtitle2 = "こわがりさんにはゆっくり時間をかけて。 毛玉が多い子には優しい毛玉ほどきを。マンツーワンの丁寧なトリミングでより可愛くします。"
     link_url = "#"
     link_text = "初回は、シルクの泡パックをサービス致します。先着20名様には、おやつセットもプレゼント。1/4から予約開始します。"
 
