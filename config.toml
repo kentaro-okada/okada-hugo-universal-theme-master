@@ -62,6 +62,12 @@ canonifyurls = true
 #    pre = "<i class='fa fa-2x fa-twitter'></i>"
 
 [[menu.topbar]]
+#    weight = 1
+#    name = "line"
+#    url = "https://line.me/R/ti/p/%40zwb3497w"
+#    pre = "<img src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png">"
+
+[[menu.topbar]]
 #    weight = 4
 #    name = "Email"
 #    url = "mailto:your@email.com"
