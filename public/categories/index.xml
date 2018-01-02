@@ -2,48 +2,48 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Universal Okadas</title>
-    <link>https://okada-hugo-universal-theme-master.netlify.com/categories/</link>
+    <link>https://bluepaws.jp/categories/</link>
     <description>Recent content in Categories on Universal Okadas</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <copyright>Copyright (c) 2018, YourCompany; all rights reserved.</copyright>
+    <copyright>Copyright (c) 2018, BLUE PAWS; all rights reserved.</copyright>
     
-	<atom:link href="https://okada-hugo-universal-theme-master.netlify.com/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://bluepaws.jp/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Lorem</title>
-      <link>https://okada-hugo-universal-theme-master.netlify.com/categories/lorem/</link>
+      <link>https://bluepaws.jp/categories/lorem/</link>
       <pubDate>Sat, 10 Oct 2015 13:07:31 +0200</pubDate>
       
-      <guid>https://okada-hugo-universal-theme-master.netlify.com/categories/lorem/</guid>
+      <guid>https://bluepaws.jp/categories/lorem/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Programming</title>
-      <link>https://okada-hugo-universal-theme-master.netlify.com/categories/programming/</link>
+      <link>https://bluepaws.jp/categories/programming/</link>
       <pubDate>Fri, 02 Oct 2015 21:49:20 +0200</pubDate>
       
-      <guid>https://okada-hugo-universal-theme-master.netlify.com/categories/programming/</guid>
+      <guid>https://bluepaws.jp/categories/programming/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Pseudo</title>
-      <link>https://okada-hugo-universal-theme-master.netlify.com/categories/pseudo/</link>
+      <link>https://bluepaws.jp/categories/pseudo/</link>
       <pubDate>Mon, 03 Aug 2015 13:39:46 +0200</pubDate>
       
-      <guid>https://okada-hugo-universal-theme-master.netlify.com/categories/pseudo/</guid>
+      <guid>https://bluepaws.jp/categories/pseudo/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Starting</title>
-      <link>https://okada-hugo-universal-theme-master.netlify.com/categories/starting/</link>
+      <link>https://bluepaws.jp/categories/starting/</link>
       <pubDate>Wed, 24 Jun 2015 13:50:46 +0200</pubDate>
       
-      <guid>https://okada-hugo-universal-theme-master.netlify.com/categories/starting/</guid>
+      <guid>https://bluepaws.jp/categories/starting/</guid>
       <description></description>
     </item>
     

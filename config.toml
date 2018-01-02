@@ -1,4 +1,4 @@
-baseurl = "https://okada-hugo-universal-theme-master.netlify.com/"
+baseurl = "https://bluepaws.jp/"
 title = "Universal Okadas"
 theme = "hugo-universal-theme-master"
 themesDir = "/themes"
@@ -94,20 +94,15 @@ canonifyurls = true
     # Enable the contact form by entering your Formspree.io email
     email = "bluepaws2018@gmail.com"
 
-    about_us = "<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>"
-    copyright = "Copyright (c) 2018, YourCompany; all rights reserved."
+    about_us = "<p>トリマー兼オーナー: 岡田有紀</br>片瀬在住。娘１人、イヌ２頭（オーストラリアンラブラドゥードル）、ネコ2匹（スコ、日本猫）の母</p>"
+    copyright = "Copyright (c) 2018, BLUE PAWS; all rights reserved."
 
     # Format dates with Go's time formatting
     date_format = "January 2, 2006"
 
-    logo = "img/bluepaws-logo.png"
-    address = """<p><strong>Universal Ltd.</strong>
-        <br>13/26 New Avenue
-        <br>Newtown upon River
-        <br>45Y 73J
-        <br>England
-        <br>
-        <strong>Great Britain</strong>
+    logo = "/img/logo-small.svg"
+    address = """<p><strong>BLUE PAWS</strong>
+        <br>神奈川県藤沢市片瀬3-1-29
       </p>
       """
     latitude = "35.315133"
@@ -120,7 +115,7 @@ canonifyurls = true
 # Enable or disable top bar with social icons
 [params.topbar]
     enable = true
-    text = """<p class="hidden-sm hidden-xs">ご予約・お問合せ先 tel:050-3196-3129 / bluepaws2018@gmail.com</p>
+    text = """<p class="hidden-sm hidden-xs">ご予約・お問合せ先 tel:050-3196-3129</p>
       <p class="hidden-md hidden-lg"><a href="tel:050-3196-3129" data-animate-hover="pulse"><i class="fa fa-phone"></i></a>
       <a href="mailto:bluepaws2018@gmail.com" data-animate-hover="pulse"><i class="fa fa-envelope"></i></a>
       </p>
@@ -149,8 +144,8 @@ canonifyurls = true
     # All testimonials are defined in their own files. You can find example items
     # at 'exampleSite/data/testimonials'.
     # For more informtion take a look at the README.
-    title = "Testimonials"
-    subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied. Have a look what our clients said about us."
+    title = "Testimonialsssss"
+    subtitle = "hoge We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied. Have a look what our clients said about us."
 
 [params.see_more]
     enable = true
@@ -159,6 +154,14 @@ canonifyurls = true
     subtitle = "We have prepared for you more than 40 different HTML pages, including 5 variations of homepage."
     link_url = "#"
     link_text = "Check other homepages"
+
+[params.intro]
+    enable = true
+    icon = "fa fa-flag-o"
+    title = "ドッグサロン BLUE PAWS 2018/1/11 オープン"
+    subtitle = "BLUE PAWSはイヌのキモチを大切にします。イヌとヒトの素敵な毎日のためにBLUE PAWSを。"
+    link_url = "#"
+    link_text = "初回は、シルクの泡パックをサービス致します。先着20名様には、おやつセットもプレゼント。1/4から予約開始します。"
 
 [params.clients]
     enable = true

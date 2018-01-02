@@ -12,7 +12,7 @@
         </div>
         <!-- /.col-md-4 -->
         {{ end }}
-
+<!-- 
         <div class="col-md-4 col-sm-6">
 
             {{ if isset .Site.Params "recent_posts" }} {{ if .Site.Params.recent_posts.enable }}
@@ -41,17 +41,18 @@
             {{ end }} {{ end }}
 
         </div>
-        <!-- /.col-md-4 -->
+ -->
 
+        <!-- /.col-md-4 -->
         {{ if isset .Site.Params "address" }}
         <div class="col-md-4 col-sm-6">
 
           <h4>{{ i18n "contactTitle" }}</h4>
 
             {{ .Site.Params.address | markdownify }}
-
+<!-- 
             <a href="/contact" class="btn btn-small btn-template-main">{{ i18n "contactGoTo" }}</a>
-
+ -->
             <hr class="hidden-md hidden-lg hidden-sm">
 
         </div>
