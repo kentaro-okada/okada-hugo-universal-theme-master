@@ -100,16 +100,15 @@ canonifyurls = true
     # Enable the contact form by entering your Formspree.io email
     email = "bluepaws2018@gmail.com"
 
-    about_us = "<p>トリマー兼オーナー: 岡田有紀</br>片瀬在住。娘１人、イヌ２頭（オーストラリアンラブラドゥードル）、ネコ2匹（スコ、日本猫）の母</p>"
+    about_us = "<p><strong>About Us</strong><p>トリマー兼オーナー: 岡田有紀</br>片瀬在住。娘１人、イヌ２頭（オーストラリアンラブラドゥードル）、ネコ2匹（スコ、日本猫）の母</p>"
     copyright = "Copyright (c) 2018, BLUE PAWS; all rights reserved."
 
     # Format dates with Go's time formatting
     date_format = "January 2, 2006"
 
     logo = "/img/logo-small.svg"
-    address = """<p><strong>BLUE PAWS</strong>
-        <br>神奈川県藤沢市片瀬3-1-29
-        <br>ご予約・お問合せ先<a href="tel:050-3196-3129" data-animate-hover="pulse"><i class="fa fa-phone"></i>TEL:050-3196-3129</a>
+    address = """<p>
+        ご予約・お問合せ先<a href="tel:050-3196-3129" data-animate-hover="pulse"><i class="fa fa-phone"></i>TEL:050-3196-3129</a>
       </p>
       """
     latitude = "35.315133"
