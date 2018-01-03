@@ -28,6 +28,12 @@
   </url>
   
   <url>
+    <loc>https://bluepaws.jp/</loc>
+    <lastmod>2015-10-10T13:07:31+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://bluepaws.jp/blog/</loc>
     <lastmod>2015-10-10T13:07:31+02:00</lastmod>
     <priority>0</priority>
@@ -109,12 +115,6 @@
   <url>
     <loc>https://bluepaws.jp/tags/theme/</loc>
     <lastmod>2015-10-02T21:49:20+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://bluepaws.jp/</loc>
-    <lastmod>2015-10-10T13:07:31+02:00</lastmod>
     <priority>0</priority>
   </url>
   
