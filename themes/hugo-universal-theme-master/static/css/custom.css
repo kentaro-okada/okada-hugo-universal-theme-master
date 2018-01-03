@@ -9,10 +9,24 @@
   min-height: 230px;
 }
 
-/* section */
+/* decoration */
+
+.normal {
+	font-weight: normal;
+}
+
+/* padding,margin */
 
 .no-pb {
-padding-bottom: 0px;
+	padding-bottom: 0px;
+}
+
+.no-mg {
+	margin-bottom: 0px;
+}
+
+.pl-mg {
+	margin-top: 10px;
 }
 
 /* table */
@@ -31,7 +45,7 @@ td {
     padding: 5px;
 }
 th { 
-	background-color: navy; color: #fff;
+	background-color: #467fbf; color: #fff;
     border-bottom: 1px solid gray;
     border-left: 1px solid gray;
     text-align: center;

@@ -1,4 +1,4 @@
-<section class="background-white no-mb no-pb">
+<section class="background-white">
     <div class="container">
       <h3 class="text-uppercase text-center">犬種別トリミング料金</h3>
       <table>
@@ -63,5 +63,31 @@
         {{ end }}
         </tbody>
       </table>
+      <p class="pl-mg text-center">※ミックスのワンちゃんは、体格・毛質の近いワンちゃんの料金になります。
+      <br>
+      ※大きめのワンちゃん、毛量の多いワンちゃんは、追加料金をいただく場合があります。初回店頭で確認して事前にお伝えします。
+      </p>
+      <h3 class="text-uppercase text-center">オプション</h3>
+      <table>
+        <thead class="text-uppercase">
+          <tr>
+          <th>サイズ</th>
+          <th>シルクの泡パック<p class="normal no-mg">(シルク特有の保湿効果で美毛に)</p></th>
+          <th>うる艶トリートメント<br><p class="normal no-mg">(皮膚再生力向上、被毛に潤いでアンチエイジング)</p></th>
+          </tr>
+        </thead>
+        <tbody>
+        {{ $url := "/static/csv/option.csv" }}
+        {{ $sep := "," }}
+        {{ range $i, $r := getCSV $sep $url }}
+          <tr>
+            <td>{{ index $r 0 }}</td>
+            <td>{{ index $r 1 }}</td>
+            <td>{{ index $r 2 }}</td>
+          </tr>
+        {{ end }}
+        </tbody>
+      </table>
+      <p class="pl-mg text-center">※料金は税抜きです。</p>
     </div>
 </section>

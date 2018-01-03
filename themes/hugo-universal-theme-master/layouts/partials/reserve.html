@@ -1,21 +1,29 @@
-{{ if isset .Site.Params "see_more" }}
-{{ if .Site.Params.see_more.enable }}
-<section class="bar background-image-fixed-2 no-mb color-white text-center">
-    <div class="dark-mask"></div>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="icon icon-lg"><i class="{{ .Site.Params.see_more.icon }}"></i>
+{{ if isset .Site.Params "reserve" }}
+{{ if .Site.Params.reserve.enable }}
+{{ if gt (len .Site.Data.reserve) 0 }}
+<section>
+    <div class="home-reserve">
+        <div class="dark-mask"></div>
+        <div class="container">
+            <div class="homepage owl-reserve">
+                {{ range sort .Site.Data.reserve "weight" }}
+                <div class="item">
+                    <div class="row">
+                        <div class="col-sm-5 right">
+                            <h1>{{ .title }}</h1>
+                            {{ .description | safeHTML }}
+                        </div>
+                        <div class="col-sm-7">
+                            <img class="img-responsive" src="{{ .image }}" alt="">
+                        </div>
+                    </div>
                 </div>
-                <h3 class="text-uppercase">{{ .Site.Params.see_more.title }}</h3>
-                <p class="lead">{{ .Site.Params.see_more.subtitle }}</p>
-                <p class="text-center">
-                    <a href="{{ .Site.Params.see_more.link_url }}" class="btn btn-template-transparent-black btn-lg">{{ .Site.Params.see_more.link_text }}</a>
-                </p>
+                {{ end }}
             </div>
-
+            <!-- /.project owl-slider -->
         </div>
     </div>
 </section>
+{{ end }}
 {{ end }}
 {{ end }}
