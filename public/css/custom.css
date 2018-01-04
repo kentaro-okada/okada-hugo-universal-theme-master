@@ -24,6 +24,10 @@
 	border-radius: 40px;
 }
 
+.home-carousel {
+	background: none;
+}
+
 /* padding,margin */
 
 .no-pb {
