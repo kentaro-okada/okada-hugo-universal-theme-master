@@ -64,8 +64,41 @@
   <meta property="og:url" content="{{ .URL }}/" />
   <meta property="og:image" content="{{ .Site.Params.logo }}" />
   <meta name="google-site-verification" content="RUXuSkeMJ77FDWIyHe3j3DxRWJD6n9TFg7kdJ9YhYQ0" />
+<!-- Google Code for &#12469;&#12452;&#12488;&#20869;&#12398;&#38651;&#35441;&#21839;&#21512;&#12379; Conversion Page
+In your html page, add the snippet and call
+goog_report_conversion when someone clicks on the
+phone number link or button. -->
+<script type="text/javascript">
+  /* <![CDATA[ */
+  goog_snippet_vars = function() {
+    var w = window;
+    w.google_conversion_id = 822389348;
+    w.google_conversion_label = "AJIPCPn2_3oQ5NSSiAM";
+    w.google_remarketing_only = false;
+  }
+  // DO NOT CHANGE THE CODE BELOW.
+  goog_report_conversion = function(url) {
+    goog_snippet_vars();
+    window.google_conversion_format = "3";
+    var opt = new Object();
+    opt.onload_callback = function() {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  }
+  var conv_handler = window['google_trackConversion'];
+  if (typeof(conv_handler) == 'function') {
+    conv_handler(opt);
+  }
+}
+/* ]]> */
+</script>
+<script type="text/javascript"
+  src="//www.googleadservices.com/pagead/conversion_async.js">
+</script>
+
 </head>
-  <!-- Facebook Pixel Code -->
+<!-- Facebook Pixel Code -->
 <script>
   !function(f,b,e,v,n,t,s)
   {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
