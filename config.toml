@@ -114,6 +114,8 @@ canonifyurls = true
         <p>営業時間 8:30～18:00、定休日:木曜、日曜
       </p>
       """
+    social = """<p><strong>ソーシャル</strong></p><a href="https://www.facebook.com/bluepaws2018/"  target="_blank"><img border="0" alt="facebookページへ" src="/img/FB-FindUsonFacebook-online-144_ja_JP.png" onclick="return gtag_report_conversion('https://www.facebook.com/bluepaws2018/');" style="background-color: white;"></a>"""
+
     latitude = "35.315133"
     longitude = "139.486057"
     direction = "藤沢市片瀬3-1-29"
@@ -123,7 +125,7 @@ canonifyurls = true
 
 # Enable or disable top bar with social icons
 [params.topbar]
-    enable = true
+    enable = false
     text = """<p class="hidden-sm hidden-xs">ご予約・お問合せ先 tel:050-3196-3129</p>
       <p class="hidden-md hidden-lg"><a href="tel:050-3196-3129" data-animate-hover="pulse"><i class="fa fa-phone"></i></a>
       <a href="mailto:bluepaws2018@gmail.com" data-animate-hover="pulse"><i class="fa fa-envelope"></i></a>
