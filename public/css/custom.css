@@ -19,6 +19,11 @@
 	color: white;
 }
 
+.testimonials .item .testimonial .name-picture img {
+	width: 70px;
+	border-radius: 40px;
+}
+
 /* padding,margin */
 
 .no-pb {

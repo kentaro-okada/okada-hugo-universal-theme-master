@@ -3,6 +3,9 @@
 {{ if gt (len .Site.Data.course) 0 }}
 <section class="bar background-white no-mb no-pb">
     <div class="container">
+        <div class="heading text-center">
+            <h2>トリミングメニュー</h2>
+        </div>
         {{ range $index, $element := sort .Site.Data.course "weight" }}
 		{{ if eq (mod $index 3) 0 }}
 		<div class="col-md-12">
