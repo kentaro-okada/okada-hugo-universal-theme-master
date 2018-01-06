@@ -100,7 +100,7 @@ canonifyurls = true
     # Enable the contact form by entering your Formspree.io email
     email = "bluepaws2018@gmail.com"
 
-    about_us = "<p><strong>About Us</strong></p><p>トリマー兼オーナー: 岡田有紀</br>片瀬在住。娘１人、イヌ２頭（オーストラリアンラブラドゥードル）、ネコ2匹（スコ、日本猫）の母</p>"
+    about_us = ""
     copyright = "Copyright (c) 2018, BLUE PAWS; all rights reserved."
 
     # Format dates with Go's time formatting
@@ -109,10 +109,10 @@ canonifyurls = true
     logo = "/img/logo-small.svg"
     address = """<p>
         <p><strong>ご予約・お問合せ先</strong></p><p><a href="tel:050-3196-3129" data-animate-hover="pulse" onclick="return gtag_report_conversion('tel:050-3196-3129');"><i class="fa fa-phone"></i>TEL:050-3196-3129</a></p>
-        <p><a href="mailto:bluepaws2018@gmail.com" data-animate-hover="pulse" onclick="return gtag_report_conversion('tel:mailto:bluepaws2018@gmail.com');"><i class="fa fa-envelope"></i>bluepaws2018@gmail.com</a></p>
-        <p>LINE <a href="https://line.me/R/ti/p/%40zwb3497w"><img height="36" border="0" alt="LINE友だち追加" src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png" onclick="return gtag_report_conversion('https://line.me/R/ti/p/%40zwb3497w');"></a></p>
-        <p>営業時間 8:30～18:00、定休日:木曜、日曜
-      </p>
+        <p><a href="mailto:bluepaws2018@gmail.com" data-animate-hover="pulse" onclick="return gtag_report_conversion('mailto:bluepaws2018@gmail.com');"><i class="fa fa-envelope"></i>bluepaws2018@gmail.com</a></p>
+        <p><a href="https://line.me/R/ti/p/%40zwb3497w"><img height="36" border="0" alt="LINE友だち追加" src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png" onclick="return gtag_report_conversion('https://line.me/R/ti/p/%40zwb3497w');"></a></p>
+        <p>お気軽にお問合せ下さい。</p>
+        <p>受付時間/営業時間 8:30～18:00(LINEは、いつでもお問合せ可です)、定休日:木曜、日曜</p>
       """
     social = """<p><strong>ソーシャル</strong></p><a href="https://www.facebook.com/bluepaws2018/"  target="_blank"><img border="0" alt="facebookページへ" src="/img/FB-FindUsonFacebook-online-144_ja_JP.png" onclick="return gtag_report_conversion('https://www.facebook.com/bluepaws2018/');" style="background-color: white;"></a>"""
 
@@ -175,11 +175,12 @@ canonifyurls = true
 [params.intro]
     enable = true
     icon = "fa fa-flag-o"
-    title = "ドッグサロン BLUE PAWS 藤沢にオープン! 予約受付中です"
+    title = "ドッグサロン BLUE PAWS 藤沢にオープン! ご予約受付中です"
     subtitle = "イヌのキモチを大切に、マンツーワンの丁寧なトリミングでより可愛くします。"
     subtitle2 = "こわがりさんにはゆっくり時間をかけて。 毛玉が多い子には優しい毛玉ほどきを。"
     subtitle3 = "イヌとヒトの素敵な毎日のためにBLUE PAWS。"
-    subtitle4 = "初回は、シルクの泡パックをサービス。ご予約先着20名様には、おやつセットもプレゼント。"
+    subtitle4 = "初回は、シルクの泡パックをサービス。ご予約先着20名様には、おやつセットもプレゼント!"
+    subtitle5 = "1/11はオープン記念で、ご来店いただいた方に、おやつのサンプルをお渡しします。"
     link_url = "#"
     link_text = ""
 
