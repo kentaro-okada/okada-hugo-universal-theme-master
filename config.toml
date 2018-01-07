@@ -175,7 +175,7 @@ canonifyurls = true
 [params.intro]
     enable = true
     icon = "fa fa-flag-o"
-    title = "ドッグサロン BLUE PAWS 藤沢にオープン! ご予約受付中です"
+    title = "ドッグサロン BLUE PAWS(ブルーパウズ)藤沢にオープン! ご予約受付中です"
     subtitle = "イヌのキモチを大切に、マンツーワンの丁寧なトリミングでより可愛くします。"
     subtitle2 = "こわがりさんにはゆっくり時間をかけて。 毛玉が多い子には優しい毛玉ほどきを。"
     subtitle3 = "イヌとヒトの素敵な毎日のためにBLUE PAWS。"
