@@ -25,6 +25,10 @@
 	border-radius: 40px;
 }
 
+.testimonials .item .testimonial .text {
+    color: black;
+}
+
 .home-carousel {
 	background: none;
 }
