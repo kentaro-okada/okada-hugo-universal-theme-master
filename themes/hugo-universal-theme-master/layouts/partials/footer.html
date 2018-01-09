@@ -73,6 +73,19 @@
         <!-- /.col-md-4 -->
         {{ end }}
 
+        <!-- /.col-md-4 -->
+        {{ if isset .Site.Params "hokanmenkyo" }}
+        <div class="col-md-4 col-sm-6">
+
+          <h4>{{ i18n "contactTitle" }}</h4>
+
+            {{ .Site.Params.hokanmenkyo | markdownify }}
+
+            <hr class="hidden-md hidden-lg hidden-sm">
+
+        </div>
+        <!-- /.col-md-4 -->
+        {{ end }}
 
     </div>
     <!-- /.container -->

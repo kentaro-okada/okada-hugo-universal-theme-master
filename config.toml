@@ -116,6 +116,8 @@ canonifyurls = true
       """
     social = """<p><strong>ソーシャル</strong></p><a href="https://www.facebook.com/bluepaws2018/"  target="_blank"><img border="0" alt="facebookページへ" src="/img/FB-FindUsonFacebook-online-144_ja_JP.png" onclick="return gtag_report_conversion('https://www.facebook.com/bluepaws2018/');" style="background-color: white;"></a>"""
 
+    hokanmenkyo = """<p><strong>第一種動物取扱業の登録</strong></p> 神奈川県第一種動物取扱業登録 動保第170303号<br>有効期限：2023年1月9日<br>動物取扱責任者：岡田有紀"""
+
     latitude = "35.315133"
     longitude = "139.486057"
     direction = "藤沢市片瀬3-1-29"
