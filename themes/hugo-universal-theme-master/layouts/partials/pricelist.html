@@ -9,60 +9,49 @@
           <th>犬種</th>
           <th>マイクロバブルシャンプーコース</th>
           <th>マイクロバブルシャンプー<br>＆カットコース</th>
-          <th>2週コース<p class="normal no-mg">(1ヶ月料金)</p></th>
           </tr>
         </thead>
         <tbody>
-        {{ $url := "/static/csv/data.csv" }}
-        {{ $sep := "," }}
-        {{ range $i, $r := getCSV $sep $url }}
           <tr>
-            <td>{{ index $r 0 }}</td>
-            <td>{{ index $r 1 }}</td>
-            <td>{{ index $r 2 }}</td>
-            <td>{{ index $r 3 }}</td>
+            <td>チワワ（スムース・ロング)</td>
+            <td>¥3,000</td>
+            <td>¥5,000</td>
           </tr>
-        {{ end }}
-        </tbody>
-         <thead class="text-uppercase">
           <tr>
-          <th>犬種</th>
-          <th>マイクロバブルシャンプーコース</th>
-          <th>マイクロバブルシャンプー<br>＆カットコース</th>
-          <th>2週コース<p class="normal no-mg">(1ヶ月料金)</p></th>
+            <td>ミニチュア・ダックス・フンド(スムース、ロング、ワイヤー)<br>ミニチュア・ピンシャー</td>
+            <td>¥3,500</td>
+            <td>¥5,500</td>
           </tr>
-        </thead>
-        <tbody>
-        {{ $url := "/static/csv/data2.csv" }}
-        {{ $sep := "," }}
-        {{ range $i, $r := getCSV $sep $url }}
           <tr>
-            <td>{{ index $r 0 }}</td>
-            <td>{{ index $r 1 }}</td>
-            <td>{{ index $r 2 }}</td>
-            <td>{{ index $r 3 }}</td>
+            <td>ヨークシャー・テリア<br>マルチーズ<br>ポメラニアン<br>ペキニーズ<br>パピヨン<br>ジャック・ラッセル・テリア<br>パグ<br>ボストン・テリア</td>
+            <td>¥4,500</td>
+            <td>¥6,500</td>
           </tr>
-        {{ end }}
-        </tbody>   
-        <thead class="text-uppercase">
           <tr>
-          <th>犬種</th>
-          <th>マイクロバブルシャンプーコース</th>
-          <th>マイクロバブルシャンプー<br>＆カットコース</th>
-          <th>2週コース<p class="normal no-mg">(1ヶ月料金)</p></th>
+            <td>シー・ズー<br>ビション・フリーゼ<br>トイ・プードル<br>キャバリア・キング・チャールズ・スパニエル<br>ミニチュア・シュナウザー<br>ウエスト・ハイランド・ホワイト・テリア<br>フレンチ・ブルドック<br>柴犬<br>ウエルシュ・コーギー・ペンブローク</td>
+            <td>¥5,000</td>
+            <td>¥7,000</td>
           </tr>
-        </thead>
-        <tbody>
-        {{ $url := "/static/csv/data3.csv" }}
-        {{ $sep := "," }}
-        {{ range $i, $r := getCSV $sep $url }}
           <tr>
-            <td>{{ index $r 0 }}</td>
-            <td>{{ index $r 1 }}</td>
-            <td>{{ index $r 2 }}</td>
-            <td>{{ index $r 3 }}</td>
+            <td>シェットランド・シープドッグ<br>アメリカン・コッカー・スパニエル<br>イングリッシュ・コッカー・スパニエル</td>
+            <td>¥6,500</td>
+            <td>¥8,500</td>
           </tr>
-        {{ end }}
+          <tr>
+            <td>ラブラドゥードル ミニチュア</td>
+            <td>¥7,000</td>
+            <td>¥9,000</td>
+          </tr>
+          <tr>
+            <td>ラブラドール・レトリーバー</td>
+            <td>¥9,000</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>ゴールデン・レトリーバー</td>
+            <td>¥9,500</td>
+            <td>¥11,500</td>
+          </tr>          
         </tbody>
       </table>
       <p class="pl-mg text-center">

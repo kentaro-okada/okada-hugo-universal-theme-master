@@ -14,6 +14,7 @@
 <script src="{{ .Site.BaseURL }}js/hpneo.gmaps.js"></script>
 <script src="{{ .Site.BaseURL }}js/gmaps.init.js"></script>
 <script src="{{ .Site.BaseURL }}js/front.js"></script>
+<script src="{{ .Site.BaseURL }}js/instafeed.min.js"></script>
 <!-- Google Code for &#12469;&#12452;&#12488;&#20869;&#12398;&#38651;&#35441;&#21839;&#21512;&#12379; Conversion Page
 In your html page, add the snippet and call
 goog_report_conversion when someone clicks on the
@@ -59,6 +60,19 @@ phone number link or button. -->
 
 	});
  </script>
+
+ <script type="text/javascript">
+var feed = new Instafeed({
+    clientId: '8ac86c93bb3444e39b00dd7744273150',
+    get: 'user', 
+    userId: '5354957122',
+    accessToken:'5354957122.8ac86c9.fd1bcb97917544b9895298ff4934b1c5',
+    links: true ,
+    limit: 20, // 取得件数 
+    resolution:'thumbnail', // thumbnail (default) - 150x150 | low_resolution - 306x306 | standard_resolution - 612x612
+});
+feed.run();
+</script>
 
 </head>
 <!-- Facebook Pixel Code -->

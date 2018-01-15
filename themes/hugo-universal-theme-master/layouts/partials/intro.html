@@ -7,8 +7,15 @@
             <div class="col-md-12">
                 <div class="icon icon-lg"><i class="{{ .Site.Params.intro.icon }}"></i>
                 </div>
-                <h3 class="text-uppercase">{{ .Site.Params.intro.title }}</h3>
-                <p class="lead">{{ .Site.Params.intro.subtitle }}<br>{{ .Site.Params.intro.subtitle2 }}<br>{{ .Site.Params.intro.subtitle3 }}<br><br>{{ .Site.Params.intro.subtitle4 }} <i class='fa fa-gift'></i><br>{{ .Site.Params.intro.subtitle5 }}<br>{{ .Site.Params.intro.subtitle6 }}
+                <h3 class="text-uppercase">
+                {{ .Site.Params.intro.title }}</h3>
+                <p class="lead">{{ .Site.Params.intro.subtitle }}<br>
+                {{ .Site.Params.intro.subtitle2 }}<br>
+                {{ .Site.Params.intro.subtitle3 }}<br><br>
+                {{ .Site.Params.intro.subtitle4 }} <i class='fa fa-gift'></i><br>
+<!--                {{ .Site.Params.intro.subtitle5 }}<br>
+-->
+                {{ .Site.Params.intro.subtitle6 }}
                 </p>
                 <p class="text-center">
                     {{ .Site.Params.intro.link_text }}
@@ -22,6 +29,7 @@
 
         </div>
     </div>
+    <ul id="instafeed"></ul>
 </section>
 {{ end }}
 {{ end }}

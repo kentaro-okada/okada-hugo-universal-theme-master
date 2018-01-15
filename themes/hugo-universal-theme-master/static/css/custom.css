@@ -6,10 +6,33 @@
 }
 
 .box-simple {
-  min-height: 230px;
+  min-height: 200px;
 }
 
+
 /* decoration */
+
+#instafeed {
+	-webkit-padding-start: 0;
+}
+
+#instafeed img{
+    padding: 2px;
+}
+
+@media (max-width: 820px){
+	#instafeed img{
+	    width: 33%;
+	}
+}
+
+.box-simple h3{
+  letter-spacing: 0;
+}
+
+.box-simple p {
+    color: black;
+}
 
 .normal {
 	font-weight: normal;
@@ -35,6 +58,10 @@
 
 /* padding,margin */
 
+.bar {
+    padding: 30px 0;
+}
+
 .no-pb {
 	padding-bottom: 0px;
 }
@@ -56,6 +83,13 @@ table {
     border-spacing: 0;
     margin: 0 auto;
 }
+
+@media (min-width: 820px) {
+  table {
+    font-size: 18px;
+  }
+}
+
 td {
     border-bottom: 1px solid gray;
     border-left: 1px solid gray;

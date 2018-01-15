@@ -7,11 +7,11 @@
             <h2>トリミングメニュー</h2>
         </div>
         {{ range $index, $element := sort .Site.Data.course "weight" }}
-		{{ if eq (mod $index 3) 0 }}
+		{{ if eq (mod $index 4) 0 }}
 		<div class="col-md-12">
             <div class="row">
 		{{ end }}
-				<div class="col-md-4">
+				<div class="col-md-6">
                     <div class="box-simple">
                         <div class="icon">
                             <i class="{{ .icon }}"></i>
@@ -20,10 +20,14 @@
                         <p>{{ $element.description | markdownify }}</p>
                     </div>
                 </div>
-		{{ if or (eq (mod $index 3) 2) (eq $index (sub (len $.Site.Data.course) 1 )) }}
+<!--
+		{{ if or (eq (mod $index 2) 1) (eq $index (sub (len $.Site.Data.course) 1 )) }}
+-->
 			</div>
 		</div>
+<!--
 		{{ end }}
+-->
         {{ end }}
     </div>
 </section>
