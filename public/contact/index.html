@@ -415,8 +415,10 @@ var feed = new Instafeed({
     userId: '5354957122',
     accessToken:'5354957122.8ac86c9.fd1bcb97917544b9895298ff4934b1c5',
     links: true ,
-    limit: 20, 
+    sortBy: 'most-liked' ,
+    limit: 9, 
     resolution:'thumbnail', 
+    template: '<li class="instafeed-image"><a href="{{link}}"  target="_blank"><img src="{{image}}" alt="{{caption}}" /><p><i class="fa fa-instagram" aria-hidden="true"></i></p></a></li>'
 });
 feed.run();
 </script>

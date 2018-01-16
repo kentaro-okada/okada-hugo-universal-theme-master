@@ -9,7 +9,6 @@
   min-height: 200px;
 }
 
-
 /* decoration */
 
 #instafeed {
@@ -104,5 +103,17 @@ th {
 	padding: 10px 5px;
 }
 
+/* instafeed */
+.instafeed-image {/*親div*/
+  position: relative;/*相対配置*/
+  display: inline-block;
+  }
 
+.instafeed-image p {
+  position: absolute;/*絶対配置*/
+  color: white;/*文字は白に*/
+  top: 2px;
+  right: 2px;
+  font-size: 16px;
+  }
 

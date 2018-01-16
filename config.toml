@@ -182,10 +182,16 @@ canonifyurls = true
     subtitle2 = "こわがりさんにはゆっくり時間をかけて。 毛玉が多い子には優しい毛玉ほどきを。"
     subtitle3 = "イヌとヒトの素敵な毎日のためにBLUE PAWS。"
     subtitle4 = "初回はシルクの泡パックとおやつセットをサービス"
-    subtitle5 = ""
+    subtitle5 = "プライベートサロンのため、待ち時間もゲージに入らずストレスフリーの環境。"
     subtitle6 = "ワンちゃん用グッズもあるので気軽にお越し下さい。"
     link_url = "#"
     link_text = ""
+
+[params.instafeed]
+    enable = true
+    link = "{{link}}"
+    image = "{{image}}"
+    caption = "{{caption}}"
 
 [params.clients]
     enable = true
