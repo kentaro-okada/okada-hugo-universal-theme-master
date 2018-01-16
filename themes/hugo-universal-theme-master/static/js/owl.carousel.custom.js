@@ -1,11 +1,10 @@
   $(".owl-carousel").owlCarousel({
 
                 URLhashListener:true,
-                startPosition: 'URLHash',
                     nav:true,
-                    dots:false,
+                    dots:true,
                     loop: true,
-                        margin:10,
+                    mergeFit: true,
                         autoHeight :true,
                   navText : ["前へ","次へ"],
 responsive:{
@@ -16,7 +15,9 @@ responsive:{
             items:2,
         },
         1000:{
-            items:3
+            items:3,
+                                                        autoplay: true,
+                                                        autoplayHoverPause: true
 		}
 	}
 })

@@ -214,4 +214,7 @@ th {
     color: black;
 }
 
+
+.owl-theme .owl-nav [class*='owl-'] {
+    color: navy;
 }
