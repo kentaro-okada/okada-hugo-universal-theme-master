@@ -48,19 +48,33 @@ phone number link or button. -->
   src="//www.googleadservices.com/pagead/conversion_async.js">
 </script>
 <!-- owl carousel -->
-<script src="{{ .Site.BaseURL }}js/owl.carousel.min.js"></script>
-<script>
-	$(document).ready(function() {
-	
-		$(".owl-carousel").owlCarousel({
-			navigation : true,
-            loop: true,
-            navigationText : ["前へ","次へ"],
-		});
-
-	});
- </script>
-
+<script src="{{ .Site.BaseURL }}js/owl.carousel.js"></script>
+ <!-- <script src="{{ .Site.BaseURL }}js/owl.carousel.custom.js"></script>  -->
+ <script type="text/javascript">
+            $(document).ready(function() {
+              $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 10,
+                responsiveClass: true,
+                responsive: {
+                  0: {
+                    items: 1,
+                    nav: true
+                  },
+                  600: {
+                    items: 1,
+                    nav: false
+                  },
+                  1000: {
+                    items: 1,
+                    nav: true,
+                    loop: false,
+                    margin: 20
+                  }
+                }
+              })
+            })
+</script>
  <script type="text/javascript">
 var feed = new Instafeed({
     clientId: '8ac86c93bb3444e39b00dd7744273150',
@@ -71,7 +85,7 @@ var feed = new Instafeed({
     sortBy: 'most-liked' ,
     limit: 6, // 取得件数 
     resolution:'thumbnail', // thumbnail (default) - 150x150 | low_resolution - 306x306 | standard_resolution - 612x612
-    template: '<li class="instafeed-image"><a href="{{ .Site.Params.instafeed.link }}"  target="_blank"><img src="{{ .Site.Params.instafeed.image }}" alt="{{ .Site.Params.instafeed.caption }}" /><p><i class="fa fa-instagram" aria-hidden="true"></i></p></a></li>'
+    template: '<li class="instafeed-image"><a href="{{ .Site.Params.instafeed.link }}"  target="_blank"><img src="{{ .Site.Params.instafeed.image }}" title="{{ .Site.Params.instafeed.caption }}" /><p><i class="fa fa-instagram" aria-hidden="true"></i></p></a></li>'
 });
 feed.run();
 </script>

@@ -15,16 +15,18 @@
 
                 <!-- *** TESTIMONIALS CAROUSEL *** -->
 
-                <ul class="owl-carousel testimonials same-height-row">
+                <ul class="owl-carousel owl-theme staff">
                     {{ range .Site.Data.testimonials }}
-                    <li class="item">
-                        <div class="testimonial same-height-always">
+                    <div class="item list" data-hash="{{ .weight }}">
+                        <div class="testimonial row-eq-height">
                             <div class="text">
                                 <p>{{ .text | markdownify }}</p>
                             </div>
                             <div class="bottom">
+                <!-- 
                                 <div class="icon"><i class="fa fa-quote-left"></i>
                                 </div>
+ -->
                                 <div class="name-picture">
                                     <img class="" alt="" src="{{ .avatar | absURL }}">
                                     <h5>{{ .name }}</h5>
@@ -32,14 +34,12 @@
                                 </div>
                             </div>
                         </div>
-                    </li>
-                    {{ end }}
+                    </div>
+                    {{ end }} 
                 </ul>
                 <!-- /.owl-carousel -->
-
                 <!-- *** TESTIMONIALS CAROUSEL END *** -->
             </div>
-
         </div>
     </div>
 </section>

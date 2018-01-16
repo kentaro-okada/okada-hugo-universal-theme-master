@@ -28,11 +28,15 @@
   
   <link href="https://bluepaws.jp/css/animate.css" rel="stylesheet">
 
+
   
   
     <link href="https://bluepaws.jp/css/style.blue.css" rel="stylesheet" id="theme-stylesheet">
   
 
+  
+  <link href="https://bluepaws.jp/css/owl.carousel.css" rel="stylesheet">
+  <link href="https://bluepaws.jp/css/owl.theme.default.css" rel="stylesheet">
 
   
   <link href="https://bluepaws.jp/css/custom.css" rel="stylesheet">
@@ -48,10 +52,6 @@
   
   <link rel="shortcut icon" href="https://bluepaws.jp/img/favicon.ico" type="image/x-icon" />
   <link rel="apple-touch-icon" href="https://bluepaws.jp/img/apple-touch-icon.png" />
-  
-
-  <link href="https://bluepaws.jp/css/owl.carousel.css" rel="stylesheet">
-  <link href="https://bluepaws.jp/css/owl.theme.css" rel="stylesheet">
 
   <link rel="alternate" href="https://bluepaws.jp/index.xml" type="application/rss+xml" title="BLUE PAWS(ブルーパウズ) - 藤沢市のドッグサロン">
 
@@ -119,19 +119,33 @@ ga('send', 'pageview');
   src="//www.googleadservices.com/pagead/conversion_async.js">
 </script>
 
-<script src="https://bluepaws.jp/js/owl.carousel.min.js"></script>
-<script>
-	$(document).ready(function() {
-	
-		$(".owl-carousel").owlCarousel({
-			navigation : true,
-            loop: true,
-            navigationText : ["前へ","次へ"],
-		});
-
-	});
- </script>
-
+<script src="https://bluepaws.jp/js/owl.carousel.js"></script>
+ 
+ <script type="text/javascript">
+            $(document).ready(function() {
+              $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 10,
+                responsiveClass: true,
+                responsive: {
+                  0: {
+                    items: 1,
+                    nav: true
+                  },
+                  600: {
+                    items: 1,
+                    nav: false
+                  },
+                  1000: {
+                    items: 1,
+                    nav: true,
+                    loop: false,
+                    margin: 20
+                  }
+                }
+              })
+            })
+</script>
  <script type="text/javascript">
 var feed = new Instafeed({
     clientId: '8ac86c93bb3444e39b00dd7744273150',
@@ -142,7 +156,7 @@ var feed = new Instafeed({
     sortBy: 'most-liked' ,
     limit: 6, 
     resolution:'thumbnail', 
-    template: '<li class="instafeed-image"><a href="{{link}}"  target="_blank"><img src="{{image}}" alt="{{caption}}" /><p><i class="fa fa-instagram" aria-hidden="true"></i></p></a></li>'
+    template: '<li class="instafeed-image"><a href="{{link}}"  target="_blank"><img src="{{image}}" title="{{caption}}" /><p><i class="fa fa-instagram" aria-hidden="true"></i></p></a></li>'
 });
 feed.run();
 </script>
@@ -280,16 +294,15 @@ feed.run();
 
                 
 
-                <ul class="owl-carousel testimonials same-height-row">
+                <ul class="owl-carousel owl-theme staff">
                     
-                    <li class="item">
-                        <div class="testimonial same-height-always">
+                    <div class="item list" data-hash="1">
+                        <div class="testimonial row-eq-height">
                             <div class="text">
                                 <p>愛犬のプーはこわがりさん。こわがりさんにはゆっくり時間をかけて。<br>愛犬のラッテは毛玉王子。優しい毛玉ほどきはお任せを。<br>片瀬在住。娘1人、イヌ2頭（オーストラリアンラブラドゥードル）、ネコ2匹（スコ、日本猫）の母</p>
                             </div>
                             <div class="bottom">
-                                <div class="icon"><i class="fa fa-quote-left"></i>
-                                </div>
+                
                                 <div class="name-picture">
                                     <img class="" alt="" src="https://bluepaws.jp/img/testimonials/yuki.jpg">
                                     <h5>岡田 有紀</h5>
@@ -297,16 +310,15 @@ feed.run();
                                 </div>
                             </div>
                         </div>
-                    </li>
+                    </div>
                     
-                    <li class="item">
-                        <div class="testimonial same-height-always">
+                    <div class="item list" data-hash="2">
+                        <div class="testimonial row-eq-height">
                             <div class="text">
                                 <p>ワンコが大好きだワン！<br>トリミングが終わったら、一緒に遊びたいな！<br><br>会えるのを楽しみににしてるよ～</p>
                             </div>
                             <div class="bottom">
-                                <div class="icon"><i class="fa fa-quote-left"></i>
-                                </div>
+                
                                 <div class="name-picture">
                                     <img class="" alt="" src="https://bluepaws.jp/img/testimonials/pu.jpg">
                                     <h5>プー</h5>
@@ -314,16 +326,15 @@ feed.run();
                                 </div>
                             </div>
                         </div>
-                    </li>
+                    </div>
                     
-                    <li class="item">
-                        <div class="testimonial same-height-always">
+                    <div class="item list" data-hash="3">
+                        <div class="testimonial row-eq-height">
                             <div class="text">
                                 <p>ヒトが大好きだワン！<br>お店でお客さんに撫でられるのを待ってるワン！<br><br>通りがかったら、のぞいてほしいな♪</p>
                             </div>
                             <div class="bottom">
-                                <div class="icon"><i class="fa fa-quote-left"></i>
-                                </div>
+                
                                 <div class="name-picture">
                                     <img class="" alt="" src="https://bluepaws.jp/img/testimonials/rate.jpg">
                                     <h5>ラッテ</h5>
@@ -331,14 +342,12 @@ feed.run();
                                 </div>
                             </div>
                         </div>
-                    </li>
-                    
+                    </div>
+                     
                 </ul>
                 
-
                 
             </div>
-
         </div>
     </div>
 </section>
@@ -540,16 +549,16 @@ feed.run();
     </div>
 </section>
 
-        
+       
 
 
 <section class="no-mb no-pb">
     <div class="home-carousel">
         <div class="dark-mask"></div>
         <div class="container">
-            <div class="homepage owl-carousel owl-theme">
+            <div class="owl-carousel owl-theme homepage">
                 
-                <div class="item">
+                <div class="item" data-hash="1">
                     <div class="row">
                         <div class="col-sm-8">
                             <h1>ご予約について</h1>
@@ -568,7 +577,7 @@ feed.run();
                     </div>
                 </div>
                 
-                <div class="item">
+                <div class="item" data-hash="2">
                     <div class="row">
                         <div class="col-sm-8">
                             <h1>ご予約の際に</h1>
@@ -589,7 +598,7 @@ feed.run();
                     </div>
                 </div>
                 
-                <div class="item">
+                <div class="item" data-hash="3">
                     <div class="row">
                         <div class="col-sm-8">
                             <h1>当日</h1>
@@ -608,6 +617,7 @@ feed.run();
                 </div>
                 
             </div>
+ 
             
         </div>
     </div>
@@ -679,7 +689,7 @@ feed.run();
 
           <h4></h4>
 
-            <p><p><strong>ソーシャル</strong></p><a href="https://www.facebook.com/bluepaws2018/"  target="_blank"><img border="0" alt="facebookページへ" src="https://bluepaws.jp/img/FB-FindUsonFacebook-online-144_ja_JP.png" onclick="return gtag_report_conversion('https://www.facebook.com/bluepaws2018/');" style="background-color: white;"></a></p>
+            <p><p><strong>ソーシャル</strong></p><a href="https://www.facebook.com/bluepaws2018/"  target="_blank"><img border="0" alt="facebookページへ" src="https://bluepaws.jp/img/FB-FindUsonFacebook-online-144_ja_JP.png" onclick="return gtag_report_conversion('https://www.facebook.com/bluepaws2018/');" style="background-color: white;"></a><a href="https://www.instagram.com/bluepaws2018/"  target="_blank"><img border="0" alt="Instagramへ" src="https://bluepaws.jp/img/Instagram_AppIcon.jpg" width="27px" style="margin-left: 15px;" onclick="return gtag_report_conversion('https://www.instagram.com/bluepaws2018/');"></a></p>
 
 
             <hr class="hidden-md hidden-lg hidden-sm">
@@ -711,7 +721,9 @@ feed.run();
 
 
 
-
+<script src="https://bluepaws.jp/js/owl.carousel.js"></script>
+<script src="https://bluepaws.jp/js/owl.carousel.custom.js"></script>  
+ 
 
 <div id="copyright">
     <div class="container">

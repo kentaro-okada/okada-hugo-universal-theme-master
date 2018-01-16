@@ -28,11 +28,15 @@
   
   <link href="https://bluepaws.jp/css/animate.css" rel="stylesheet">
 
+
   
   
     <link href="https://bluepaws.jp/css/style.blue.css" rel="stylesheet" id="theme-stylesheet">
   
 
+  
+  <link href="https://bluepaws.jp/css/owl.carousel.css" rel="stylesheet">
+  <link href="https://bluepaws.jp/css/owl.theme.default.css" rel="stylesheet">
 
   
   <link href="https://bluepaws.jp/css/custom.css" rel="stylesheet">
@@ -48,10 +52,6 @@
   
   <link rel="shortcut icon" href="https://bluepaws.jp/img/favicon.ico" type="image/x-icon" />
   <link rel="apple-touch-icon" href="https://bluepaws.jp/img/apple-touch-icon.png" />
-  
-
-  <link href="https://bluepaws.jp/css/owl.carousel.css" rel="stylesheet">
-  <link href="https://bluepaws.jp/css/owl.theme.css" rel="stylesheet">
 
   <link rel="alternate" href="https://bluepaws.jp/index.xml" type="application/rss+xml" title="BLUE PAWS(ブルーパウズ) - 藤沢市のドッグサロン">
 
@@ -239,7 +239,7 @@
 
           <h4></h4>
 
-            <p><p><strong>ソーシャル</strong></p><a href="https://www.facebook.com/bluepaws2018/"  target="_blank"><img border="0" alt="facebookページへ" src="https://bluepaws.jp/img/FB-FindUsonFacebook-online-144_ja_JP.png" onclick="return gtag_report_conversion('https://www.facebook.com/bluepaws2018/');" style="background-color: white;"></a></p>
+            <p><p><strong>ソーシャル</strong></p><a href="https://www.facebook.com/bluepaws2018/"  target="_blank"><img border="0" alt="facebookページへ" src="https://bluepaws.jp/img/FB-FindUsonFacebook-online-144_ja_JP.png" onclick="return gtag_report_conversion('https://www.facebook.com/bluepaws2018/');" style="background-color: white;"></a><a href="https://www.instagram.com/bluepaws2018/"  target="_blank"><img border="0" alt="Instagramへ" src="https://bluepaws.jp/img/Instagram_AppIcon.jpg" width="27px" style="margin-left: 15px;" onclick="return gtag_report_conversion('https://www.instagram.com/bluepaws2018/');"></a></p>
 
 
             <hr class="hidden-md hidden-lg hidden-sm">
@@ -271,7 +271,9 @@
 
 
 
-
+<script src="https://bluepaws.jp/js/owl.carousel.js"></script>
+<script src="https://bluepaws.jp/js/owl.carousel.custom.js"></script>  
+ 
 
 <div id="copyright">
     <div class="container">
@@ -351,19 +353,33 @@ ga('send', 'pageview');
   src="//www.googleadservices.com/pagead/conversion_async.js">
 </script>
 
-<script src="https://bluepaws.jp/js/owl.carousel.min.js"></script>
-<script>
-	$(document).ready(function() {
-	
-		$(".owl-carousel").owlCarousel({
-			navigation : true,
-            loop: true,
-            navigationText : ["前へ","次へ"],
-		});
-
-	});
- </script>
-
+<script src="https://bluepaws.jp/js/owl.carousel.js"></script>
+ 
+ <script type="text/javascript">
+            $(document).ready(function() {
+              $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 10,
+                responsiveClass: true,
+                responsive: {
+                  0: {
+                    items: 1,
+                    nav: true
+                  },
+                  600: {
+                    items: 1,
+                    nav: false
+                  },
+                  1000: {
+                    items: 1,
+                    nav: true,
+                    loop: false,
+                    margin: 20
+                  }
+                }
+              })
+            })
+</script>
  <script type="text/javascript">
 var feed = new Instafeed({
     clientId: '8ac86c93bb3444e39b00dd7744273150',
@@ -374,7 +390,7 @@ var feed = new Instafeed({
     sortBy: 'most-liked' ,
     limit: 6, 
     resolution:'thumbnail', 
-    template: '<li class="instafeed-image"><a href="{{link}}"  target="_blank"><img src="{{image}}" alt="{{caption}}" /><p><i class="fa fa-instagram" aria-hidden="true"></i></p></a></li>'
+    template: '<li class="instafeed-image"><a href="{{link}}"  target="_blank"><img src="{{image}}" title="{{caption}}" /><p><i class="fa fa-instagram" aria-hidden="true"></i></p></a></li>'
 });
 feed.run();
 </script>

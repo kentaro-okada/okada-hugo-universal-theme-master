@@ -28,15 +28,6 @@
 	color: white;
 }
 
-.testimonials .item .testimonial .name-picture img {
-	width: 70px;
-	border-radius: 40px;
-}
-
-.testimonials .item .testimonial .text {
-    color: black;
-}
-
 .home-carousel {
 	background: none;
 }
@@ -89,6 +80,7 @@ th {
 	padding: 10px 5px;
 }
 
+
 /* instafeed */
 #instafeed {
 	-webkit-padding-start: 0;
@@ -129,4 +121,97 @@ th {
 	.instafeed-image p {
 	      top: -4px;
 	}
+}
+
+/* staff */
+.staff {
+  padding: 0;
+  margin-bottom: 40px;
+}
+.staff .list {
+  list-style-type: none;
+  margin: 0 5px;
+  background: #fff;
+  padding-bottom: 60px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.staff .list .testimonial {
+  position: relative;
+  padding: 20px;
+  height: 200px;
+}
+.staff .list .testimonial:before,
+.staff .list .testimonial:after {
+  content: " ";
+  display: table;
+}
+.staff .list .testimonial:after {
+  clear: both;
+}
+.staff .list .testimonial:before,
+.staff .list .testimonial:after {
+  content: " ";
+  display: table;
+}
+.staff .list .testimonial:after {
+  clear: both;
+}
+.staff .list .testimonial .text {
+  color: #999999;
+  margin-bottom: 40px;
+}
+.staff .list .testimonial .bottom {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 20px;
+  height: 50px;
+}
+.staff .list .testimonial .bottom .icon {
+  color: #38a7bb;
+  font-size: 30px;
+  float: left;
+  width: 20%;
+}
+.staff .list .testimonial .name-picture {
+  float: right;
+  width: 80%;
+  text-align: right;
+}
+.staff .list .testimonial .name-picture h5 {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+.staff .list .testimonial .name-picture p {
+  color: #999999;
+  margin: 0;
+  font-size: 12px;
+}
+.staff .list .testimonial .name-picture img {
+  float: right;
+  width: 60px;
+  border-radius: 30px;
+  margin-left: 10px;
+}
+
+.staff .list .testimonial .name-picture {
+    width: 100%;
+}
+
+.staff .list .testimonial .name-picture img {
+	width: 70px;
+	border-radius: 40px;
+}
+
+.staff .list .testimonial .text {
+    color: black;
+}
+
 }

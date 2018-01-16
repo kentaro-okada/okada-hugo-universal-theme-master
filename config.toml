@@ -114,7 +114,7 @@ canonifyurls = true
         <p>お気軽にお問合せ下さい。</p>
         <p>受付/営業時間 8:30～18:00(LINEは、いつでもお問合せ結構です)、定休日:木曜、日曜、祝祭日</p>
       """
-    social = """<p><strong>ソーシャル</strong></p><a href="https://www.facebook.com/bluepaws2018/"  target="_blank"><img border="0" alt="facebookページへ" src="/img/FB-FindUsonFacebook-online-144_ja_JP.png" onclick="return gtag_report_conversion('https://www.facebook.com/bluepaws2018/');" style="background-color: white;"></a>"""
+    social = """<p><strong>ソーシャル</strong></p><a href="https://www.facebook.com/bluepaws2018/"  target="_blank"><img border="0" alt="facebookページへ" src="/img/FB-FindUsonFacebook-online-144_ja_JP.png" onclick="return gtag_report_conversion('https://www.facebook.com/bluepaws2018/');" style="background-color: white;"></a><a href="https://www.instagram.com/bluepaws2018/"  target="_blank"><img border="0" alt="Instagramへ" src="/img/Instagram_AppIcon.jpg" width="27px" style="margin-left: 15px;" onclick="return gtag_report_conversion('https://www.instagram.com/bluepaws2018/');"></a>"""
 
     hokanmenkyo = """<p><strong>第一種動物取扱業の登録</strong></p> 神奈川県第一種動物取扱業登録 動保第170303号<br>有効期限：2023年1月9日<br>動物取扱責任者：岡田有紀"""
 
@@ -140,10 +140,10 @@ canonifyurls = true
     tags = true
     search = true
 
-[params.carousel]
+[params.reserve]
     enable = true
     # All carousel items are defined in their own files. You can find example items
-    # at 'exampleSite/data/carousel'.
+    # at 'exampleSite/data/reserve'.
     # For more informtion take a look at the README.
 
 [params.features]
@@ -169,9 +169,6 @@ canonifyurls = true
     link_text = "Check other homepages"
 
 [params.course]
-    enable = true
-
-[params.reserve]
     enable = true
 
 [params.intro]
