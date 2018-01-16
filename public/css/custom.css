@@ -104,8 +104,14 @@ th {
   }
 
 @media (max-width: 820px){
-	#instafeed-image {
-	    width: 25%;
+	.instafeed-image {
+	    width: 33%;
+	}
+}
+
+@media (max-width: 820px){
+	#instafeed img{
+	    padding-left: 0px;
 	}
 }
 
