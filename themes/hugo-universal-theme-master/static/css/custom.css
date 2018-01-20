@@ -99,14 +99,14 @@ th {
 .instafeed-image p {
   position: absolute;/*絶対配置*/
   color: white;/*文字は白に*/
-  top: 62px;
+  top: 2px;
   right: 2px;
   font-size: 16px;
   }
 
 @media (max-width: 820px){
 	#instafeed img {
-	    width: 33%;
+	    width: 100%;
 	}
 }
 

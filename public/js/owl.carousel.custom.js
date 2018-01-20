@@ -1,8 +1,9 @@
   $(".owl-carousel").owlCarousel({
 
                 URLhashListener:true,
+                startPosition: 'URLHash',
                     nav:true,
-                    dots:true,
+                    dots:false,
                     loop: true,
                     mergeFit: true,
                         autoHeight :true,

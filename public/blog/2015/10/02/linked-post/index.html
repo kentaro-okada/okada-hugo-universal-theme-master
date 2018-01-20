@@ -38,6 +38,10 @@
   <link href="https://bluepaws.jp/css/owl.carousel.css" rel="stylesheet">
   <link href="https://bluepaws.jp/css/owl.theme.default.css" rel="stylesheet">
 
+ 
+  <link href="https://bluepaws.jp/css/swiper.min.css" rel="stylesheet">
+
+
   
   <link href="https://bluepaws.jp/css/custom.css" rel="stylesheet">
 
@@ -62,7 +66,7 @@
   <meta property="og:image" content="/img/logo-small.svg" />
   <meta name="google-site-verification" content="RUXuSkeMJ77FDWIyHe3j3DxRWJD6n9TFg7kdJ9YhYQ0" />
 
-
+  </head>
 
   <body>
 
@@ -421,6 +425,7 @@ ga('send', 'pageview');
 <script src="https://bluepaws.jp/js/gmaps.init.js"></script>
 <script src="https://bluepaws.jp/js/front.js"></script>
 <script src="https://bluepaws.jp/js/instafeed.min.js"></script>
+<script src="https://bluepaws.jp/js/swiper.min.js"></script>
 
 <script type="text/javascript">
    
@@ -450,34 +455,6 @@ ga('send', 'pageview');
 <script type="text/javascript"
   src="//www.googleadservices.com/pagead/conversion_async.js">
 </script>
-
-<script src="https://bluepaws.jp/js/owl.carousel.js"></script>
- 
- <script type="text/javascript">
-            $(document).ready(function() {
-              $('.owl-carousel').owlCarousel({
-                loop: true,
-                margin: 10,
-                responsiveClass: true,
-                responsive: {
-                  0: {
-                    items: 1,
-                    nav: true
-                  },
-                  600: {
-                    items: 1,
-                    nav: false
-                  },
-                  1000: {
-                    items: 1,
-                    nav: true,
-                    loop: false,
-                    margin: 20
-                  }
-                }
-              })
-            })
-</script>
  <script type="text/javascript">
 var feed = new Instafeed({
     clientId: '8ac86c93bb3444e39b00dd7744273150',
@@ -486,9 +463,32 @@ var feed = new Instafeed({
     accessToken:'5354957122.8ac86c9.fd1bcb97917544b9895298ff4934b1c5',
     links: true ,
     sortBy: 'most-liked' ,
-    limit: 6, 
+    limit: 20, 
     resolution:'thumbnail', 
-    template: '<li class="instafeed-image"><a href="{{link}}"  target="_blank"><img src="{{image}}" title="{{caption}}" /><p><i class="fa fa-instagram" aria-hidden="true"></i></p></a></li>'
+    template: '<div class="instafeed-image swiper-slide"><a href="{{link}}"  target="_blank"><img src="{{image}}" title="{{caption}}" /></a></div>',
+    after: function () {
+  var mySwiper = new Swiper('.swiper-container', {
+  	roundLengths: true,
+    loop: true,
+    slidesPerView: 9,
+	navigation: {
+	    nextEl: '.swiper-button-next',
+	    prevEl: '.swiper-button-prev',
+	  },	  
+	pagination: {
+	  el: '.swiper-pagination',
+	  type: 'bullets',
+	},
+    breakpoints: {
+    768: {
+      slidesPerView: 3
+    	},
+    1350: {
+      slidesPerView: 6
+    	} 	
+ 	}
+  });
+}
 });
 feed.run();
 </script>
@@ -511,6 +511,47 @@ feed.run();
   src="https://www.facebook.com/tr?id=2090918967812279&ev=PageView&noscript=1"
 /></noscript>
 
+
+<script type="text/javascript">
+     
+    yahoo_snippet_vars = function() {
+        var w = window;
+        w.yahoo_conversion_id = 1000417478;
+        w.yahoo_conversion_label = "osCuCK64xXsQoYCbhwM";
+        w.yahoo_conversion_value = 0;
+        w.yahoo_remarketing_only = false;
+    }
+    
+    yahoo_report_conversion = function(url) {
+        yahoo_snippet_vars();
+        window.yahoo_conversion_format = "3";
+        window.yahoo_is_call = true;
+        var opt = new Object();
+        opt.onload_callback = function() {
+            if (typeof(url) != 'undefined') {
+                window.location = url;
+            }
+        }
+        var conv_handler = window['yahoo_trackConversion'];
+        if (typeof(conv_handler) == 'function') {
+            conv_handler(opt);
+        }
+    }
+     
+</script>
+<script type="text/javascript"
+        src="https://s.yimg.jp/images/listing/tool/cv/conversion_async.js">
+</script>
+
+<script type="text/javascript" language="javascript">
+ 
+var yahoo_retargeting_id = '01APARI6FL';
+var yahoo_retargeting_label = '';
+var yahoo_retargeting_page_type = '';
+var yahoo_retargeting_items = [{item_id: '', category_id: '', price: '', quantity: ''}];
+ 
+</script>
+<script type="text/javascript" language="javascript" src="https://b92.yahoo.co.jp/js/s_retargeting.js"></script>
 
 
   </body>

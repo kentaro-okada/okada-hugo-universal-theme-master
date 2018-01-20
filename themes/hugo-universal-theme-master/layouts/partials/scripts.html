@@ -15,6 +15,7 @@
 <script src="{{ .Site.BaseURL }}js/gmaps.init.js"></script>
 <script src="{{ .Site.BaseURL }}js/front.js"></script>
 <script src="{{ .Site.BaseURL }}js/instafeed.min.js"></script>
+<script src="{{ .Site.BaseURL }}js/swiper.min.js"></script>
 <!-- Google Code for &#12469;&#12452;&#12488;&#20869;&#12398;&#38651;&#35441;&#21839;&#21512;&#12379; Conversion Page
 In your html page, add the snippet and call
 goog_report_conversion when someone clicks on the
@@ -47,34 +48,6 @@ phone number link or button. -->
 <script type="text/javascript"
   src="//www.googleadservices.com/pagead/conversion_async.js">
 </script>
-<!-- owl carousel -->
-<script src="{{ .Site.BaseURL }}js/owl.carousel.js"></script>
- <!-- <script src="{{ .Site.BaseURL }}js/owl.carousel.custom.js"></script>  -->
- <script type="text/javascript">
-            $(document).ready(function() {
-              $('.owl-carousel').owlCarousel({
-                loop: true,
-                margin: 10,
-                responsiveClass: true,
-                responsive: {
-                  0: {
-                    items: 1,
-                    nav: true
-                  },
-                  600: {
-                    items: 1,
-                    nav: false
-                  },
-                  1000: {
-                    items: 1,
-                    nav: true,
-                    loop: false,
-                    margin: 20
-                  }
-                }
-              })
-            })
-</script>
  <script type="text/javascript">
 var feed = new Instafeed({
     clientId: '8ac86c93bb3444e39b00dd7744273150',
@@ -83,9 +56,32 @@ var feed = new Instafeed({
     accessToken:'5354957122.8ac86c9.fd1bcb97917544b9895298ff4934b1c5',
     links: true ,
     sortBy: 'most-liked' ,
-    limit: 6, // 取得件数 
+    limit: 20, // 取得件数 
     resolution:'thumbnail', // thumbnail (default) - 150x150 | low_resolution - 306x306 | standard_resolution - 612x612
-    template: '<li class="instafeed-image"><a href="{{ .Site.Params.instafeed.link }}"  target="_blank"><img src="{{ .Site.Params.instafeed.image }}" title="{{ .Site.Params.instafeed.caption }}" /><p><i class="fa fa-instagram" aria-hidden="true"></i></p></a></li>'
+    template: '<div class="instafeed-image swiper-slide"><a href="{{ .Site.Params.instafeed.link }}"  target="_blank"><img src="{{ .Site.Params.instafeed.image }}" title="{{ .Site.Params.instafeed.caption }}" /></a></div>',
+    after: function () {
+  var mySwiper = new Swiper('.swiper-container', {
+  	roundLengths: true,
+    loop: true,
+    slidesPerView: 9,
+	navigation: {
+	    nextEl: '.swiper-button-next',
+	    prevEl: '.swiper-button-prev',
+	  },	  
+	pagination: {
+	  el: '.swiper-pagination',
+	  type: 'bullets',
+	},
+    breakpoints: {
+    768: {
+      slidesPerView: 3
+    	},
+    1350: {
+      slidesPerView: 6
+    	} 	
+ 	}
+  });
+}
 });
 feed.run();
 </script>
@@ -108,3 +104,45 @@ feed.run();
   src="https://www.facebook.com/tr?id=2090918967812279&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Facebook Pixel Code -->
+<!-- Yahoo Code for your Conversion Page In your html page, add the snippet and call
+yahoo_report_conversion when someone clicks on the phone number link or button. -->
+<script type="text/javascript">
+    /* <![CDATA[ */
+    yahoo_snippet_vars = function() {
+        var w = window;
+        w.yahoo_conversion_id = 1000417478;
+        w.yahoo_conversion_label = "osCuCK64xXsQoYCbhwM";
+        w.yahoo_conversion_value = 0;
+        w.yahoo_remarketing_only = false;
+    }
+    // IF YOU CHANGE THE CODE BELOW, THIS CONVERSION TAG MAY NOT WORK.
+    yahoo_report_conversion = function(url) {
+        yahoo_snippet_vars();
+        window.yahoo_conversion_format = "3";
+        window.yahoo_is_call = true;
+        var opt = new Object();
+        opt.onload_callback = function() {
+            if (typeof(url) != 'undefined') {
+                window.location = url;
+            }
+        }
+        var conv_handler = window['yahoo_trackConversion'];
+        if (typeof(conv_handler) == 'function') {
+            conv_handler(opt);
+        }
+    }
+    /* ]]> */
+</script>
+<script type="text/javascript"
+        src="https://s.yimg.jp/images/listing/tool/cv/conversion_async.js">
+</script>
+<!-- Yahoo Code for your Target List -->
+<script type="text/javascript" language="javascript">
+/* <![CDATA[ */
+var yahoo_retargeting_id = '01APARI6FL';
+var yahoo_retargeting_label = '';
+var yahoo_retargeting_page_type = '';
+var yahoo_retargeting_items = [{item_id: '', category_id: '', price: '', quantity: ''}];
+/* ]]> */
+</script>
+<script type="text/javascript" language="javascript" src="https://b92.yahoo.co.jp/js/s_retargeting.js"></script>
