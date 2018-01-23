@@ -1,7 +1,5 @@
   $(".owl-carousel").owlCarousel({
 
-                URLhashListener:true,
-                startPosition: 'URLHash',
                     nav:true,
                     dots:false,
                     loop: true,
