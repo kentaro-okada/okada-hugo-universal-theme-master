@@ -118,4 +118,8 @@
     <priority>0</priority>
   </url>
   
+  <url>
+    <loc>https://bluepaws.jp/pay/</loc>
+  </url>
+  
 </urlset>
