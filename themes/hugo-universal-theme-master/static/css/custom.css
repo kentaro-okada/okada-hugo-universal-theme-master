@@ -50,6 +50,17 @@
 	margin-top: 10px;
 }
 
+.pd-bt {
+  padding-bottom: 10px;
+}
+
+.img-middle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+
+
 /* table */
 
 table {
@@ -218,3 +229,6 @@ th {
 .owl-theme .owl-nav [class*='owl-'] {
     color: navy;
 }
+
+
+
