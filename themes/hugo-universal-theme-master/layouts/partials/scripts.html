@@ -63,9 +63,6 @@ var feed = new Instafeed({
     accessToken:'5354957122.8ac86c9.fd1bcb97917544b9895298ff4934b1c5',
     links: true ,
     sortBy: 'most-liked' ,
-    filter: function(image) {
-            return image.tags.indexOf('マルプー') >= 0;
-        },
     limit: 20, // 取得件数 
     resolution:'thumbnail', // thumbnail (default) - 150x150 | low_resolution - 306x306 | standard_resolution - 612x612
     template: '<div class="instafeed-image swiper-slide"><a href="{{ .Site.Params.instafeed.link }}"  target="_blank"><img src="{{ .Site.Params.instafeed.image }}" title="{{ .Site.Params.instafeed.caption }}" /></a></div>',
