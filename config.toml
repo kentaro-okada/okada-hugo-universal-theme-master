@@ -158,7 +158,7 @@ canonifyurls = true
     # at 'exampleSite/data/testimonials'.
     # For more informtion take a look at the README.
     title = "スタッフのご紹介"
-    subtitle = ""
+    subtitle = "トリマーと看板犬2頭でお待ちしています。(ワンコが苦手な子は、予約の際にお伝えください。他の場所に移動させます。)"
 
 [params.see_more]
     enable = true
