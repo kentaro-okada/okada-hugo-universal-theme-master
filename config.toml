@@ -1,5 +1,5 @@
 baseurl = "https://bluepaws.jp/"
-title = "BLUE PAWS(ブルーパウズ) - 藤沢市のドッグサロン"
+title = "BLUE PAWS(ブルーパウズ) - 藤沢市のドッグサロン/トリミングサロン"
 theme = "hugo-universal-theme-master"
 themesDir = "/themes"
 languageCode = "ja"
@@ -158,7 +158,7 @@ canonifyurls = true
     # at 'exampleSite/data/testimonials'.
     # For more informtion take a look at the README.
     title = "スタッフのご紹介"
-    subtitle = "トリマーと看板犬2頭でお待ちしています。(ワンコが苦手な子は、予約の際にお伝えください。他の場所に移動させます。)"
+    subtitle = "トリマーと看板犬2頭でお待ちしています。<br>(ワンコが苦手な子は、予約の際にお伝えください。2Fで待機します。)"
 
 [params.see_more]
     enable = true
