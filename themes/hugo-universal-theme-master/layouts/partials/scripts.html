@@ -55,7 +55,7 @@ phone number link or button. -->
 <script type="text/javascript"
   src="//www.googleadservices.com/pagead/conversion_async.js">
 </script>
- <script type="text/javascript">
+ <script  async type="text/javascript">
 var feed = new Instafeed({
     clientId: '8ac86c93bb3444e39b00dd7744273150',
     get: 'user', 
@@ -140,7 +140,7 @@ yahoo_report_conversion when someone clicks on the phone number link or button. 
     }
     /* ]]> */
 </script>
-<script type="text/javascript"
+<script async type="text/javascript"
         src="https://s.yimg.jp/images/listing/tool/cv/conversion_async.js">
 </script>
 <!-- Yahoo Code for your Target List -->
@@ -153,3 +153,34 @@ var yahoo_retargeting_items = [{item_id: '', category_id: '', price: '', quantit
 /* ]]> */
 </script>
 <script type="text/javascript" language="javascript" src="https://b92.yahoo.co.jp/js/s_retargeting.js"></script>
+<!-- owl carousel -->
+<script src="{{ .Site.BaseURL }}js/owl.carousel.js"></script>
+<script src="{{ .Site.BaseURL }}js/owl.carousel.custom.js"></script>  
+     <script type="text/javascript">
+            $(document).ready(function() {
+              $('.owl-carousel').owlCarousel({
+                loop: false,
+                margin: 10,
+                responsiveClass: true,
+                responsive: {
+                  0: {
+                    items: 1,
+                    nav: false
+                  },
+                  600: {
+                    items: 3,
+                    nav: false
+                  },
+                  1000: {
+                    items: 5,
+                    nav: false,
+                    loop: false,
+                    margin: 20
+                  }
+                }
+                URLhashListener:true,
+                autoplayHoverPause:true,
+                startPosition: 'URLHash'
+              })
+            })
+</script>
