@@ -1,4 +1,4 @@
 weight: 4
-name: "次回予約割引"
-icon: "fa fa-calendar-plus-o"
-description: "次回ご予約が1ヶ月以内のお客様は10%OFF、2ヶ月以内のお客様は5%OFFします。"
+name: "リピーター特典"
+icon: "fa fa-gift"
+description: "毎月ご利用のお客様は10%OFF、2ヶ月以内のお客様は5%OFFします。"
