@@ -1,0 +1,47 @@
+{{ if isset .Site.Params "review" }}
+{{ if .Site.Params.review.enable }}
+{{ if gt (len .Site.Data.review) 0 }}
+<section class="bar background-pentagon no-mb no-pb">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="heading text-center">
+                    <h2>{{ .Site.Params.review.title }}</h2>
+                </div>
+
+                <!-- *** review CAROUSEL *** -->
+
+
+               <ul class="owl-carousel owl-theme staff" itemprop="review" itemscope itemtype="http://schema.org/Review">  
+                    {{ range .Site.Data.review }}
+                    <div class="item list" itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
+                        <div class="testimonial row-eq-height">
+                            <div class="text">
+                                <p><span itemprop="reviewBody" >{{ .text | markdownify }}</span></p>
+                            </div>
+                            <div class="bottom">
+                <!-- 
+                                <div class="icon"><i class="fa fa-quote-left"></i>
+                                </div>
+ -->
+                                <div class="name-picture">
+                                    <img class="" alt="{{ .alt }}" src="{{ .avatar | absURL }}">
+                                    評価:<meta itemprop="ratingValue" content="{{ .ratingValue }}"><span style="color: gold;">{{ .ratingStar }}</span>
+                                    <h5><span itemprop="author" itemscope itemtype="http://schema.org/Person">{{ .name }}</span></h5>
+                                    <p><span itemprop="datePublished" content="{{ .position }}">{{ .position }}</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {{ end }} 
+                </ul>
+                <!-- /.owl-carousel -->
+                <!-- *** review CAROUSEL END *** -->
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /.bar -->
+{{ end }}
+{{ end }}
+{{ end }}

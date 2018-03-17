@@ -77,7 +77,7 @@ canonifyurls = true
     viewMorePostLink = "/blog/"
     author = "DevCows"
     defaultKeywords = ["トリミングサロン", "ペットサロン", "ドッグサロン"]
-    defaultDescription = "ゲージフリーで快適な藤沢市片瀬のプライベート・ドッグサロン/トリミングサロン BLUE PAWS(ブルーパウズ)です"
+    defaultDescription = "ワンちゃんを可愛くトリミング。ゲージフリーで、ワンコに快適な環境です。プライベートサロンなので、他のワンコが苦手でも安心。江ノ島駅近くのドッグサロン/トリミングサロン BLUE PAWS(ブルーパウズ)です。"
 
     # Google Maps API key (if not set will default to not passing a key.)
     googleMapsApiKey = "AIzaSyD6r7uzc0ZwD885VedNmXb1m2RjgM6kZOI"
@@ -159,6 +159,10 @@ canonifyurls = true
     # For more informtion take a look at the README.
     title = "スタッフのご紹介"
     subtitle = "トリマーと看板犬2頭でお待ちしています。<br>(ワンコが苦手な子は、予約の際にお伝えください。2Fで待機します。)"
+
+[params.review]
+    enable = true
+    title = "お客様の声"
 
 [params.see_more]
     enable = true
