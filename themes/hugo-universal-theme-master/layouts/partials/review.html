@@ -27,7 +27,7 @@
                                 <div class="name-picture">
                                     <img class="" alt="{{ .alt }}" src="{{ .avatar | absURL }}">
                                     評価:<meta itemprop="ratingValue" content="{{ .ratingValue }}"><span style="color: gold;">{{ .ratingStar }}</span>
-                                    <h5><span itemprop="author" itemscope itemtype="http://schema.org/Person">{{ .name }}</span></h5>
+                                    <h5><div itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop=”name”>{{ .name }}</span></div></h5>
                                     <p><span itemprop="datePublished" content="{{ .position }}">{{ .position }}</span></p>
                                 </div>
                             </div>
