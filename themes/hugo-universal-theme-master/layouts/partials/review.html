@@ -12,12 +12,12 @@
                 <!-- *** review CAROUSEL *** -->
 
 
-               <ul class="owl-carousel owl-theme staff" itemprop="review" itemscope itemtype="http://schema.org/Review">  
+               <ul class="owl-carousel owl-theme staff">  
                     {{ range .Site.Data.review }}
-                    <div class="item list" itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
+                    <div class="item list">
                         <div class="testimonial row-eq-height">
                             <div class="text">
-                                <p><span itemprop="reviewBody" >{{ .text | markdownify }}</span></p>
+                                <p>{{ .text | markdownify }}</p>
                             </div>
                             <div class="bottom">
                 <!-- 
@@ -26,9 +26,9 @@
  -->
                                 <div class="name-picture">
                                     <img class="" alt="{{ .alt }}" src="{{ .avatar | absURL }}">
-                                    評価:<meta itemprop="ratingValue" content="{{ .ratingValue }}"><span style="color: gold;">{{ .ratingStar }}</span>
-                                    <h5><div itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop=”name”>{{ .name }}</span></div></h5>
-                                    <p><span itemprop="datePublished" content="{{ .position }}">{{ .position }}</span></p>
+                                    評価:<span style="color: gold;">{{ .ratingStar }}</span>
+                                    <h5>{{ .name }}</h5>
+                                    <p>{{ .position }}</p>
                                 </div>
                             </div>
                         </div>
