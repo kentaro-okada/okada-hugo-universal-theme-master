@@ -99,6 +99,7 @@ th {
 
 #instafeed img{
     padding: 2px;
+    width: 100%;
 }
 
 .instafeed-image {/*親div*/

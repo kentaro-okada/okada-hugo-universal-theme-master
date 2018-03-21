@@ -41,6 +41,8 @@
  
   <link href="https://bluepaws.jp/css/swiper.min.css" rel="stylesheet">
 
+ 
+  <link href="https://bluepaws.jp/css/magnific-popup.css" rel="stylesheet">
 
   
   <link href="https://bluepaws.jp/css/custom.css" rel="stylesheet">
@@ -748,12 +750,15 @@ so, such as in this example:</p>
 <script src="https://bluepaws.jp/js/front.js"></script>
 <script src="https://bluepaws.jp/js/instafeed.min.js"></script>
 <script src="https://bluepaws.jp/js/swiper.min.js"></script>
-<script type="text/javascript" src="https://bluepaws.jp/js/jquery.matchHeight.js"></script>
+<script src="https://bluepaws.jp/js/jquery.matchHeight.js"></script>
+<script src="https://bluepaws.jp/js/magnificpopup.min.js"></script>
 <script>
 $(function(){
 　　$('.matchHeight').matchHeight();
 });
 </script>
+
+
 
  <script  async type="text/javascript">
 var feed = new Instafeed({
@@ -764,8 +769,8 @@ var feed = new Instafeed({
     links: true ,
     sortBy: 'most-liked' ,
     limit: 20, 
-    resolution:'thumbnail', 
-    template: '<div class="instafeed-image swiper-slide"><a href="{{link}}"  target="_blank"><img src="{{image}}" title="{{caption}}" /></a></div>',
+    resolution:'standard_resolution', 
+    template: '<div class="instafeed-image swiper-slide"><a href="{{image}}" data-title="{{caption}}"><img src="{{image}}" title="{{caption}}" /></a></div>',
     after: function () {
   var mySwiper = new Swiper('.swiper-container', {
   	roundLengths: true,
@@ -788,10 +793,41 @@ var feed = new Instafeed({
     	} 	
  	}
   });
-}
+},
+
+
 });
 feed.run();
 </script>
+
+
+<script  async type="text/javascript">
+$(document).ready(function() {
+  $('.popup-gallery').magnificPopup({
+    delegate: 'a',
+    type: 'image',
+    mainClass: 'mfp-img-mobile',
+    zoom: {
+            enabled: true, 
+            duration: 300,
+            easing: 'ease-in-out',
+            opener: function(openerElement) {
+              return openerElement.is('img') ? openerElement : openerElement.find('img');
+            }
+          },
+    gallery: {
+      enabled: true,
+    },
+    image: {
+      tError: '<a href="%url%">The image #%curr%</a> 表示に失敗しました.',
+      titleSrc: function(item) {
+        return item.el.attr('data-title');
+      }
+    }
+  });
+});
+</script>
+
 
 </head>
 

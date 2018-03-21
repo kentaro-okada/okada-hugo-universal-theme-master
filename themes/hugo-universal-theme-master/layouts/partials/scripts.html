@@ -16,13 +16,16 @@
 <script src="{{ .Site.BaseURL }}js/front.js"></script>
 <script src="{{ .Site.BaseURL }}js/instafeed.min.js"></script>
 <script src="{{ .Site.BaseURL }}js/swiper.min.js"></script>
-<script type="text/javascript" src="{{ .Site.BaseURL }}js/jquery.matchHeight.js"></script>
+<script src="{{ .Site.BaseURL }}js/jquery.matchHeight.js"></script>
+<script src="{{ .Site.BaseURL }}js/magnificpopup.min.js"></script>
 <script>
 $(function(){
 　　$('.matchHeight').matchHeight();
 });
 </script>
 
+
+<!-- Instafeed -->
  <script  async type="text/javascript">
 var feed = new Instafeed({
     clientId: '8ac86c93bb3444e39b00dd7744273150',
@@ -32,8 +35,8 @@ var feed = new Instafeed({
     links: true ,
     sortBy: 'most-liked' ,
     limit: 20, // 取得件数 
-    resolution:'thumbnail', // thumbnail (default) - 150x150 | low_resolution - 306x306 | standard_resolution - 612x612
-    template: '<div class="instafeed-image swiper-slide"><a href="{{ .Site.Params.instafeed.link }}"  target="_blank"><img src="{{ .Site.Params.instafeed.image }}" title="{{ .Site.Params.instafeed.caption }}" /></a></div>',
+    resolution:'standard_resolution', // thumbnail (default) - 150x150 | low_resolution - 306x306 | standard_resolution - 612x612
+    template: '<div class="instafeed-image swiper-slide"><a href="{{ .Site.Params.instafeed.image }}" data-title="{{ .Site.Params.instafeed.caption }}"><img src="{{ .Site.Params.instafeed.image }}" title="{{ .Site.Params.instafeed.caption }}" /></a></div>',
     after: function () {
   var mySwiper = new Swiper('.swiper-container', {
   	roundLengths: true,
@@ -56,10 +59,41 @@ var feed = new Instafeed({
     	} 	
  	}
   });
-}
+},
+
+
 });
 feed.run();
 </script>
+
+<!-- Magnific Popup -->
+<script  async type="text/javascript">
+$(document).ready(function() {
+  $('.popup-gallery').magnificPopup({
+    delegate: 'a',
+    type: 'image',
+    mainClass: 'mfp-img-mobile',
+    zoom: {
+            enabled: true, 
+            duration: 300,
+            easing: 'ease-in-out',
+            opener: function(openerElement) {
+              return openerElement.is('img') ? openerElement : openerElement.find('img');
+            }
+          },
+    gallery: {
+      enabled: true,
+    },
+    image: {
+      tError: '<a href="%url%">The image #%curr%</a> 表示に失敗しました.',
+      titleSrc: function(item) {
+        return item.el.attr('data-title');
+      }
+    }
+  });
+});
+</script>
+
 
 </head>
 <!-- Facebook Pixel -->
