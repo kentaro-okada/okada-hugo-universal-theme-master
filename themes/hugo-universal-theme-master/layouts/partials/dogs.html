@@ -1,0 +1,23 @@
+{{ if isset .Site.Params "course" }}
+{{ if .Site.Params.course.enable }}
+{{ if gt (len .Site.Data.course) 0 }}
+<section class="bar background-white">
+    <div class="container">
+        <div class="heading text-center">
+            <h2>ご来店のワンちゃん</h2>
+        </div>
+            <p class="text-center">
+            ※画像クリックで、拡大+コメントが表示されます。
+            </p>
+    <div class="swiper-container">
+       <div id="instafeed" class="swiper-wrapper popup-gallery">  
+       </div> 
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>  
+
+</section>
+{{ end }}
+{{ end }}
+{{ end }}
