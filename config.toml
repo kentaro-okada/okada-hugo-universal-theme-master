@@ -127,7 +127,7 @@ canonifyurls = true
 
 # Enable or disable top bar with social icons
 [params.topbar]
-    enable = true
+    enable = false
     text = """<p class="hidden-sm hidden-xs">ご予約・お問合せ先 tel:050-3196-3129</p>
       <p class="hidden-md hidden-lg"><a href="tel:050-3196-3129" data-animate-hover="pulse"><i class="fa fa-phone"></i></a>
       <a href="mailto:bluepaws2018@gmail.com" data-animate-hover="pulse"><i class="fa fa-envelope"></i></a>
