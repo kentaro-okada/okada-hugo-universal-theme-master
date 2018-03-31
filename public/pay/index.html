@@ -250,26 +250,27 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
   
 <section class="bar background-white no-mb">
-    <div class="container">
+    <div class="container" align="center">
       <div class="heading text-center">
           <h2>アクセス</h2>
       </div>
       <p class="text-center">神奈川県藤沢市片瀬3-1-29<br>江ノ電江ノ島駅、
-湘南モノレール湘南江の島駅から徒歩5分<br>国道467号の江ノ島駅入口交差点より藤沢駅方面へ車で約1分<br>※駐車場はありませんが、店頭の路肩に一時停車可能です。</p>
-      <p class="text-center">※地図の「+」ボタンでズーム、<i class="fa fa-map-marker"></i>アイコンのクリックでルート検索ができます。</p>
-    </div>
-      <div class="hidden">
-        <input id="gmap-lat" value="35.315133" />
-        <input id="gmap-lng" value="139.486057" />
-        <input id="gmap-marker" value="https://bluepaws.jp/img/marker.png" />
+湘南モノレール湘南江の島駅から徒歩5分<br>国道467号の江ノ島駅入口交差点より藤沢駅方面へ車で約1分<br>※駐車場はありませんが、店頭の路肩に一時停車可能です。<br>
+      ※地図上の<i class="fa fa-map-marker" style="color: red"></i>アイコンのクリックでルート検索ができます。</p>
+
         
-          <input id="gmap-dir" value="藤沢市片瀬3-1-29" />
+        <img src="https://maps.googleapis.com/maps/api/staticmap?center=35.31513,139.486059&zoom=18&size=600x400&markers=color:red%7C35.31513,139.486059&key=AIzaSyBmrmhVxBRy-JOHuiFoxA-LHanXSMy3KJM" usemap="#Map" alt="ペットサロンの地図">
+        <map name="Map">
+        <area shape="circle" coords="201,179,15" href="https://www.google.com/maps?daddr=藤沢市片瀬3-1-29" target="_blank" alt="トリミングサロンの地図" />
+        </map>
         
       </div>
-      <div id="map" />
   
 
 </section>
+
+
+
 
 
             
@@ -372,11 +373,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <script defer="defer" src="//cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
 <script defer="defer" src="//cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0/jquery.counterup.min.js"></script>
 <script defer="defer" src="//cdnjs.cloudflare.com/ajax/libs/jquery-parallax/1.1.3/jquery-parallax.js"></script>
-
-<script defer="defer" src="//maps.googleapis.com/maps/api/js?key=AIzaSyD6r7uzc0ZwD885VedNmXb1m2RjgM6kZOI&v=3.exp"></script>
-
-<script defer="defer" src="https://bluepaws.jp/js/hpneo.gmaps.js"></script>
-<script defer="defer" src="https://bluepaws.jp/js/gmaps.init.js"></script>
 <script defer="defer" src="https://bluepaws.jp/js/front.js"></script>
 <script src="https://bluepaws.jp/js/instafeed.min.js"></script>
 <script defer="defer" src="https://bluepaws.jp/js/swiper.min.js"></script>

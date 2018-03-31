@@ -1,25 +1,24 @@
 {{ if isset .Site.Params "latitude" }}
   {{ if isset .Site.Params "longitude" }}
 <section class="bar background-white no-mb">
-    <div class="container">
+    <div class="container" align="center">
       <div class="heading text-center">
           <h2>アクセス</h2>
       </div>
       <p class="text-center">神奈川県藤沢市片瀬3-1-29<br>江ノ電江ノ島駅、
-湘南モノレール湘南江の島駅から徒歩5分<br>国道467号の江ノ島駅入口交差点より藤沢駅方面へ車で約1分<br>※駐車場はありませんが、店頭の路肩に一時停車可能です。</p>
-      <p class="text-center">※地図の「+」ボタンでズーム、<i class="fa fa-map-marker"></i>アイコンのクリックでルート検索ができます。</p>
-    </div>
-      <div class="hidden">
-        <input id="gmap-lat" value="{{ .Site.Params.latitude }}" />
-        <input id="gmap-lng" value="{{ .Site.Params.longitude }}" />
-        <input id="gmap-marker" value="{{ .Site.BaseURL }}img/marker.png" />
-        {{ if isset .Site.Params "direction" }}
-          <input id="gmap-dir" value="{{ .Site.Params.direction }}" />
+湘南モノレール湘南江の島駅から徒歩5分<br>国道467号の江ノ島駅入口交差点より藤沢駅方面へ車で約1分<br>※駐車場はありませんが、店頭の路肩に一時停車可能です。<br>
+      ※地図上の<i class="fa fa-map-marker" style="color: red"></i>アイコンのクリックでルート検索ができます。</p>
+
+        {{ if .Site.Params.googleMapsApiKey }}
+        <img src="https://maps.googleapis.com/maps/api/staticmap?center=35.31513,139.486059&zoom=18&size=600x400&markers=color:red%7C35.31513,139.486059&key={{.Site.Params.googleMapsApiKey}}" usemap="#Map" alt="ペットサロンの地図">
+        <map name="Map">
+        <area shape="circle" coords="201,179,15" href="https://www.google.com/maps?daddr=藤沢市片瀬3-1-29" target="_blank" alt="トリミングサロンの地図" />
+        </map>
         {{ else }}
-          <input id="gmap-dir" value="{{ .Site.Params.latitude }},{{ .Site.Params.longitude }}" />
         {{ end }}
       </div>
-      <div id="map" />
   {{ end }}
 {{ end }}
 </section>
+
+
