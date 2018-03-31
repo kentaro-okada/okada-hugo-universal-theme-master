@@ -20,15 +20,9 @@
 
   {{ .Hugo.Generator }}
 
-  <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
+  <script src="{{ .Site.BaseURL }}js/loadCSS.js"></script>
 
-  <!-- Bootstrap and Font Awesome css -->
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-  <!-- Css animations  -->
-  <link href="{{ .Site.BaseURL }}css/animate.css" rel="stylesheet">
-
 
   <!-- Theme stylesheet, if possible do not edit this stylesheet -->
   {{ if and (isset .Site.Params "style") .Site.Params.style }}
@@ -37,15 +31,22 @@
     <link href="{{ .Site.BaseURL }}css/style.default.css" rel="stylesheet" id="theme-stylesheet">
   {{ end }}
 
+  <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css' rel=”preload”>
+
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel=”preload”>
+
+  <!-- Css animations  -->
+  <link href="{{ .Site.BaseURL }}css/animate.css" rel="stylesheet" rel=”preload”>
+
   <!-- owl carousel css -->
-  <link href="{{ .Site.BaseURL }}css/owl.carousel.css" rel="stylesheet">
-  <link href="{{ .Site.BaseURL }}css/owl.theme.default.css" rel="stylesheet">
+  <link href="{{ .Site.BaseURL }}css/owl.carousel.css" rel="stylesheet" rel=”preload”>
+  <link href="{{ .Site.BaseURL }}css/owl.theme.default.css" rel="stylesheet" rel=”preload”>
 
  <!-- Swiper css -->
-  <link href="{{ .Site.BaseURL }}css/swiper.min.css" rel="stylesheet">
+  <link href="{{ .Site.BaseURL }}css/swiper.min.css" rel="stylesheet" rel=”preload”>
 
  <!-- magnific-popup css -->
-  <link href="{{ .Site.BaseURL }}css/magnific-popup.css" rel="stylesheet">
+  <link href="{{ .Site.BaseURL }}css/magnific-popup.css" rel="stylesheet" rel=”preload”>
 
   <!-- Custom stylesheet - for your changes -->
   <link href="{{ .Site.BaseURL }}css/custom.css" rel="stylesheet">
