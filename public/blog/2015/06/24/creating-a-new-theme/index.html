@@ -1598,6 +1598,7 @@ var yahoo_retargeting_items = [{item_id: '', category_id: '', price: '', quantit
               $('.owl-carousel').owlCarousel({
                 loop: false,
                 margin: 10,
+                autoplay: false,
                 responsiveClass: true,
                 responsive: {
                   0: {
@@ -1612,11 +1613,11 @@ var yahoo_retargeting_items = [{item_id: '', category_id: '', price: '', quantit
                     items: 5,
                     nav: false,
                     loop: false,
+                                    autoplay: false,
                     margin: 20
                   }
-                }
-                URLhashListener:true,
-                autoplayHoverPause:true,
+                },
+                URLhashListener: true,
                 startPosition: 'URLHash'
               })
             })
@@ -1651,13 +1652,18 @@ var yahoo_retargeting_items = [{item_id: '', category_id: '', price: '', quantit
     "https://www.instagram.com/bluepaws2018/"],
     "aggregateRating": {
     "@type": "AggregateRating",
-    "ratingValue": "4.8/5",
+    "ratingValue": "4.8",
+    "bestRating": "5",
+    "worstRating": "1",
     "reviewCount": "4"
    },   
     "review": [
     {
       "@type": "Review",
-      "author": "M.H様",
+      "author": {
+        "@type": "Person",
+        "name": "M.H様"
+      },
       "datePublished": "2018-03-18",
       "description": "湘南地区でいろいろなペットサロンに行きましたが、ゲージに入れないお店は初めてです。ワンコも喜ぶと思って、こちらのお店に行きました。3匹お願いしましたが、とても丁寧にカットしていただきました。全体のフォルムも可愛いのですが、肉球や指の間も綺麗にカットされていて、耳の中も綺麗になっていました。お尻の周りのカットも丁寧にされていて、とても満足です。",
       "name": "とても満足です",
@@ -1670,7 +1676,10 @@ var yahoo_retargeting_items = [{item_id: '', category_id: '', price: '', quantit
     },
     {
       "@type": "Review",
-      "author": "Y.I様",
+      "author": {
+      "@type": "Person",
+      "name": "Y.I様"
+      },
       "datePublished": "2018-02-07",
       "description": "偶然ネットでゲージフリー。という魅力的な広告を見つけ、泡パック付きシャンプーコースに行って来ました。4カ月のポメラニアンで毛がまだシャワシャワでしたが、ふあっふあ。お店は通り沿いでブルーの入り口が分かりやすいです。オススメします。",
       "name": "オススメします",
@@ -1683,8 +1692,11 @@ var yahoo_retargeting_items = [{item_id: '', category_id: '', price: '', quantit
     },
     {
       "@type": "Review",
-      "author": "Y.I様",
-      "datePublished": "2018-02-07",
+      "author": {
+      "@type": "Person",
+      "name": "R.I様"
+      },
+      "datePublished": "2018-02-27",
       "description": "4才のトイプードルのトリミングコースでお世話になりました。トリマーさんが優しく犬に愛情たっぷりに接してくださり安心してお任せすることができました。犬にとってもストレスの少ないプライベートサロンです。",
       "name": "犬にとってもストレスの少ないプライベートサロンです",
       "reviewRating": {
@@ -1696,14 +1708,17 @@ var yahoo_retargeting_items = [{item_id: '', category_id: '', price: '', quantit
     },
     {
       "@type": "Review",
-      "author": "M.H様",
-      "datePublished": "2018-03-18",
+      "author": {
+      "@type": "Person",
+      "name": "Y.S様"
+      },
+      "datePublished": "2018-01-27",
       "description": "お店オープンのお知らせを見て、早速シャンプーをお願いしました。初回のサービスでシルク泡パックを付けてもらいました。シャンプーしてもらってから２週間経ちますが、シャンプーのみの場合よりも毛艶がよく、毛のフワフワ感も持続しているように思います。またお願いします！",
       "name": "またお願いします！",
       "reviewRating": {
         "@type": "Rating",
         "bestRating": "5",
-        "ratingValue": "5",
+        "ratingValue": "4",
         "worstRating": "1"
       }
     }
