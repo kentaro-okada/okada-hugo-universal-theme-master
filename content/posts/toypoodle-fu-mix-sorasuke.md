@@ -1,7 +1,15 @@
 ---
-title: toypoodle-fu-mix-sorasuke
-description: toypoodle-fu-mix-sorasuke
+title: トイプードル ふー君、 MIX そらすけ君のトリミング
+description: トイプードル ふー君、 MIX そらすけ君のトリミングです。ドッグサロンブルーパウズにご来店のお客様、いつもありがとうございます。
 date: '2018-04-03T12:17:53+09:00'
 thumbnail: /images/uploads/img_9990.jpg
+categories:
+  - トリミング
+tags:
+  - トイプードル
 ---
-toypoodle-fu-mix-sorasuke
+トイプードル ふー君、 MIX そらすけ君、 ご家族でご来店。
+
+ 真っ白、モフモフ、元気な12歳
+
+(2018/3/31ご来店)
