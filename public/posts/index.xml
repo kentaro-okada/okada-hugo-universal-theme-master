@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on BLUE PAWS(ブルーパウズ) - 藤沢市のトリミングサロン/ドッグサロン</title>
+    <link>https://bluepaws.jp/posts/</link>
+    <description>Recent content in Posts on BLUE PAWS(ブルーパウズ) - 藤沢市のトリミングサロン/ドッグサロン</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <copyright>Copyright (c) 2018, BLUE PAWS all rights reserved.</copyright>
+    <lastBuildDate>Tue, 03 Apr 2018 12:54:50 +0900</lastBuildDate>
+    
+	<atom:link href="https://bluepaws.jp/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>test2</title>
+      <link>https://bluepaws.jp/posts/test2/</link>
+      <pubDate>Tue, 03 Apr 2018 12:54:50 +0900</pubDate>
+      
+      <guid>https://bluepaws.jp/posts/test2/</guid>
+      <description>test</description>
+    </item>
+    
+    <item>
+      <title>トイプードル ふー君、 MIX そらすけ君のトリミング</title>
+      <link>https://bluepaws.jp/posts/toypoodle-fu-mix-sorasuke/</link>
+      <pubDate>Tue, 03 Apr 2018 12:17:53 +0900</pubDate>
+      
+      <guid>https://bluepaws.jp/posts/toypoodle-fu-mix-sorasuke/</guid>
+      <description>トイプードル ふー君、 MIX そらすけ君、 ご家族でご来店。
+真っ白、モフモフ、元気な12歳
+(2018/3/31ご来店)</description>
+    </item>
+    
+    <item>
+      <title>test4</title>
+      <link>https://bluepaws.jp/posts/test4/</link>
+      <pubDate>Tue, 03 Apr 2018 00:00:00 +0900</pubDate>
+      
+      <guid>https://bluepaws.jp/posts/test4/</guid>
+      <description>test4</description>
+    </item>
+    
+  </channel>
+</rss>
