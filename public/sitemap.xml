@@ -3,13 +3,18 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://bluepaws.jp/posts/test6-20180410/</loc>
+    <lastmod>2018-04-10T01:24:01+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://bluepaws.jp/posts/test2/</loc>
     <lastmod>2018-04-03T12:54:50+09:00</lastmod>
   </url>
   
   <url>
-    <loc>https://bluepaws.jp/posts/toypoodle-fu-mix-sorasuke/</loc>
-    <lastmod>2018-04-03T12:17:53+09:00</lastmod>
+    <loc>https://bluepaws.jp/posts/test/</loc>
+    <lastmod>2018-04-03T11:46:26+09:00</lastmod>
   </url>
   
   <url>
@@ -43,8 +48,12 @@
   </url>
   
   <url>
+    <loc>https://bluepaws.jp/posts/toypoodle-fu-mix-sorasuke/</loc>
+  </url>
+  
+  <url>
     <loc>https://bluepaws.jp/</loc>
-    <lastmod>2018-04-03T12:54:50+09:00</lastmod>
+    <lastmod>2018-04-10T01:24:01+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -99,18 +108,18 @@
   
   <url>
     <loc>https://bluepaws.jp/posts/</loc>
-    <lastmod>2018-04-03T12:54:50+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://bluepaws.jp/categories/programming/</loc>
-    <lastmod>2015-10-02T21:49:20+02:00</lastmod>
+    <lastmod>2018-04-10T01:24:01+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://bluepaws.jp/tags/programming/</loc>
+    <lastmod>2015-10-02T21:49:20+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bluepaws.jp/categories/programming/</loc>
     <lastmod>2015-10-02T21:49:20+02:00</lastmod>
     <priority>0</priority>
   </url>
@@ -134,6 +143,18 @@
   </url>
   
   <url>
+    <loc>https://bluepaws.jp/tags/test/</loc>
+    <lastmod>2018-04-10T01:24:01+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bluepaws.jp/categories/test/</loc>
+    <lastmod>2018-04-10T01:24:01+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://bluepaws.jp/tags/theme/</loc>
     <lastmod>2015-10-02T21:49:20+02:00</lastmod>
     <priority>0</priority>
@@ -145,13 +166,13 @@
   
   <url>
     <loc>https://bluepaws.jp/tags/%E3%83%88%E3%82%A4%E3%83%97%E3%83%BC%E3%83%89%E3%83%AB/</loc>
-    <lastmod>2018-04-03T12:17:53+09:00</lastmod>
+    <lastmod>2018-04-03T11:46:26+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://bluepaws.jp/categories/%E3%83%88%E3%83%AA%E3%83%9F%E3%83%B3%E3%82%B0/</loc>
-    <lastmod>2018-04-03T12:17:53+09:00</lastmod>
+    <lastmod>2018-04-03T11:46:26+09:00</lastmod>
     <priority>0</priority>
   </url>
   

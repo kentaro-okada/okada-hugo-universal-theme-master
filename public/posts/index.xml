@@ -7,13 +7,22 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>Copyright (c) 2018, BLUE PAWS all rights reserved.</copyright>
-    <lastBuildDate>Tue, 03 Apr 2018 12:54:50 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 10 Apr 2018 01:24:01 +0900</lastBuildDate>
     
 	<atom:link href="https://bluepaws.jp/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>test2</title>
+      <title>test6</title>
+      <link>https://bluepaws.jp/posts/test6-20180410/</link>
+      <pubDate>Tue, 10 Apr 2018 01:24:01 +0900</pubDate>
+      
+      <guid>https://bluepaws.jp/posts/test6-20180410/</guid>
+      <description>test</description>
+    </item>
+    
+    <item>
+      <title>test3</title>
       <link>https://bluepaws.jp/posts/test2/</link>
       <pubDate>Tue, 03 Apr 2018 12:54:50 +0900</pubDate>
       
@@ -22,14 +31,13 @@
     </item>
     
     <item>
-      <title>トイプードル ふー君、 MIX そらすけ君のトリミング</title>
-      <link>https://bluepaws.jp/posts/toypoodle-fu-mix-sorasuke/</link>
-      <pubDate>Tue, 03 Apr 2018 12:17:53 +0900</pubDate>
+      <title>toypoodle-fu-mix-sorasuke</title>
+      <link>https://bluepaws.jp/posts/test/</link>
+      <pubDate>Tue, 03 Apr 2018 11:46:26 +0900</pubDate>
       
-      <guid>https://bluepaws.jp/posts/toypoodle-fu-mix-sorasuke/</guid>
+      <guid>https://bluepaws.jp/posts/test/</guid>
       <description>トイプードル ふー君、 MIX そらすけ君、 ご家族でご来店。
-真っ白、モフモフ、元気な12歳
-(2018/3/31ご来店)</description>
+真っ白、モフモフ、元気な12歳</description>
     </item>
     
     <item>
@@ -39,6 +47,18 @@
       
       <guid>https://bluepaws.jp/posts/test4/</guid>
       <description>test4</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://bluepaws.jp/posts/toypoodle-fu-mix-sorasuke/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bluepaws.jp/posts/toypoodle-fu-mix-sorasuke/</guid>
+      <description>title: トイプードル ふー君、 MIX そらすけ君のトリミング description: トイプードル ふー君、 MIX そらすけ君のトリミングです。ドッグサロンブルーパウズにご来店のお客様、いつもありがとうございます。 date: &amp;lsquo;2018-04-03T12:17:53+09:00&amp;rsquo; thumbnail: /images/uploads/img_9990.jpg categories: [&amp;ldquo;トリミング]
+tags: [&amp;ldquo;トイプードル&amp;rdquo;] トイプードル ふー君、 MIX そらすけ君、 ご家族でご来店。
+真っ白、モフモフ、元気な12歳
+(2018/3/31ご来店)</description>
     </item>
     
   </channel>
