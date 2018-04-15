@@ -1,34 +1,36 @@
 {{ if isset .Site.Params "reserve" }}
 {{ if .Site.Params.reserve.enable }}
-{{ if gt (len .Site.Data.reserve) 0 }}
-<section class="no-mb no-pb">
-    <div class="home-carousel">
-        <div class="dark-mask"></div>
-        <div class="container">
-            <div class="owl-carousel owl-theme homepage">
-                {{ range sort .Site.Data.reserve "weight" }}
-                <div class="item" data-hash="{{ .weight }}" data-merge="3">
-                    <div class="row">
-                        <div class="col-sm-8">
-                            <h1>{{ .title }}</h1>
-                            {{ .description | safeHTML }}
-                        </div>
-                        <div class="col-sm-4">
-                            <img class="img-responsive" src="{{ .image }}" alt="{{ .alt }}">
-                        </div>
-                    </div>
-                </div>
-                {{ end }}
+<section class="bar no-mb color-white text-center">
+<!--    <div class="dark-mask"></div>-->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="text-uppercase">
+                {{ .Site.Params.reserve.title }}</h2>
+                <ul class="tx-lt">
+                <p>                
+                <li>{{ .Site.Params.reserve.subtitle }}</li>
+                <li>{{ .Site.Params.reserve.subtitle2 }}</li>
+                <li>{{ .Site.Params.reserve.subtitle3 }}</li>
+                <li>{{ .Site.Params.reserve.subtitle4 }}</li>
+                <li>{{ .Site.Params.reserve.subtitle5 }}</li>
+                <li>{{ .Site.Params.reserve.subtitle6 }}
+                </p>
+                </ul>
+                
+<!--                <p class="text-center">
+                    {{ .Site.Params.reserve.link_text }}
+                </p>
+
+                <p class="text-center">
+                    <a href="{{ .Site.Params.reserve.link_url }}" class="btn btn-template-transparent-black btn-lg">{{ .Site.Params.reserve.link_text }}</a>
+                </p>
+-->
             </div>
-            <!-- /.project owl-slider -->
+
         </div>
     </div>
-<!-- 
-<div><a class="owl-button" href="#1">ご予約について</a></div>
-<div><a class="owl-button" href="#2">ご予約の際</a></div>
-<div><a class="owl-button" href="#3">当日について</a></div>
- -->                     
+  <a name="trimming-staff"></a>
 </section>
-{{ end }}
 {{ end }}
 {{ end }}

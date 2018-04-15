@@ -1,5 +1,5 @@
-<footer id="footer">
-    <div class="container">
+<footer id="">
+    <div class="container no-mb">
 <!-- 
         {{ if isset .Site.Params "about_us" }}
         <div class="col-md-4 col-sm-6">
@@ -47,7 +47,7 @@
         {{ if isset .Site.Params "address" }}
         <div class="col-md-4 col-sm-6">
 
-          <h4>{{ i18n "contactTitle" }}</h4>
+<!--           <h2>{{ i18n "contactTitle" }}</h2> -->
 
             {{ .Site.Params.address | markdownify }}
 <!-- 

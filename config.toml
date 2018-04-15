@@ -108,7 +108,7 @@ canonifyurls = true
 
     logo = "/img/logo-small.svg"
     address = """<p>
-        <p><strong>ご予約・お問合せ先</strong></p><p><a href="tel:050-3196-3129" data-animate-hover="pulse" onclick="return gtag_report_conversion('tel:050-3196-3129');"><i class="fa fa-phone"></i>TEL:050-3196-3129</a></p>
+        <h3>ご予約・お問合せ先</strong></h3><p><a href="tel:050-3196-3129" data-animate-hover="pulse" onclick="return gtag_report_conversion('tel:050-3196-3129');"><i class="fa fa-phone"></i>TEL:050-3196-3129</a></p>
         <p><a href="mailto:bluepaws2018@gmail.com" data-animate-hover="pulse" onclick="return gtag_report_conversion('mailto:bluepaws2018@gmail.com');"><i class="fa fa-envelope"></i>bluepaws2018@gmail.com</a></p>
         <p><a href="https://line.me/R/ti/p/%40zwb3497w"><img height="36" border="0" alt="LINE友だち追加" src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png" onclick="return gtag_report_conversion('https://line.me/R/ti/p/%40zwb3497w');"></a></p>
         <p>LINEの友だち登録で、お得な情報をお届けします。</p>
@@ -139,12 +139,6 @@ canonifyurls = true
     categories = true
     tags = true
     search = true
-
-[params.reserve]
-    enable = true
-    # All carousel items are defined in their own files. You can find example items
-    # at 'exampleSite/data/reserve'.
-    # For more informtion take a look at the README.
 
 [params.features]
     enable = false
@@ -180,9 +174,9 @@ canonifyurls = true
     icon = "fa fa-flag-o"
     title = "ドッグサロン ブルーパウズ"
     subtitle = "イヌのキモチを大切に、マンツーワンの丁寧なトリミングでより可愛くします♪"
-    subtitle2 = "怖がりさんには丁寧に時間をかけて。毛玉の多い子には優しい毛玉ほどきで。"
-    subtitle3 = "プライベートサロンなので、待ち時間もゲージ外でストレスフリーの環境。"
-    subtitle4 = "イヌとヒトの素敵な毎日のために、BLUE PAWSを。"
+    subtitle2 = "プライベートサロンのため、待ち時間もワンちゃんがゲージフリーで自由に過ごせます。"
+    subtitle3 = "イヌとヒトの素敵な毎日のために、BLUE PAWSを。"
+    subtitle4 = ""
     subtitle5 = ""
     subtitle6 = ""
     link_url = "#"
@@ -193,6 +187,20 @@ canonifyurls = true
     link = "{{link}}"
     image = "{{image}}"
     caption = "{{caption}}"
+
+[params.reserve]
+    enable = true
+    icon = ""
+    title = "ご予約に際して"
+    subtitle = "当サロンは予約制プライベートサロンです。"
+    subtitle2 = "事前にLINE、お電話でのご予約をお願いします。"
+    subtitle3 = "営業時間は8:30～18:00、定休日は木曜と日曜、祝祭日です。"
+    subtitle4 = "ご予約の変更、キャンセルは前日までにお願いします。"
+    subtitle5 = "相互感染防止にご協力下さい。1年以内の混合ワクチン接種、狂犬病予防接種、ノミ、ダニの駆除対策をお願い致します。"
+    subtitle6 = "持病のあるワンちゃんは事前にお伝え下さい（重度の心臓病、てんかん、ヘルニアの場合は動物病院でのトリミングをお勧めします）。"
+    subtitle7 = "噛み癖のあるワンちゃんは事前にご申告下さい。毛玉、もつれが一般的な範囲を超える場合は追加料金を頂く場合、バリカンでトリミングさせて頂く場合もありますのでご了承下さい。）"
+    link_url = "#"
+    link_text = ""
 
 [params.clients]
     enable = true

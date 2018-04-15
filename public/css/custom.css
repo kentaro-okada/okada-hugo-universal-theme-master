@@ -232,4 +232,11 @@ th {
 }
 
 
+/* style.blue.css */
+.bar.color-white li {
+  color: #fff;
+}
 
+.tx-lt {
+    text-align: left;
+}

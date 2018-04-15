@@ -1,0 +1,34 @@
+{{ if isset .Site.Params "reserve" }}
+{{ if .Site.Params.reserve.enable }}
+{{ if gt (len .Site.Data.reserve) 0 }}
+<section class="no-mb no-pb">
+    <div class="home-carousel">
+        <div class="dark-mask"></div>
+        <div class="container">
+            <div class="owl-carousel owl-theme homepage">
+                {{ range sort .Site.Data.reserve "weight" }}
+                <div class="item" data-hash="{{ .weight }}" data-merge="3">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h3>{{ .title }}</h3>
+                            {{ .description | safeHTML }}
+                        </div>
+                        <!-- <div class="col-sm-4">
+                            <img class="img-responsive" src="{{ .image }}" alt="{{ .alt }}">
+                        </div> -->
+                    </div>
+                </div>
+                {{ end }}
+            </div>
+            <!-- /.project owl-slider -->
+        </div>
+    </div>
+<!-- 
+<div><a class="owl-button" href="#1">ご予約について</a></div>
+<div><a class="owl-button" href="#2">ご予約の際</a></div>
+<div><a class="owl-button" href="#3">当日について</a></div>
+ -->                     
+</section>
+{{ end }}
+{{ end }}
+{{ end }}

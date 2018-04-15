@@ -1,29 +1,30 @@
 {{ if isset .Site.Params "intro" }}
 {{ if .Site.Params.intro.enable }}
-<section class="bar no-mb color-white text-center">
+<section class="bar no-mb no-pb color-white text-center">
 <!--    <div class="dark-mask"></div>-->
     <div class="container">
         <div class="row">
             <div class="col-md-4 matchHeight img-middle">
-                 <img class="img-responsive pd-bt" src="img/intro-photo.jpg" alt="トリミングサロンのトリマーと店舗外観">
+                 <img class="img-responsive pd-bt" src="img/intro-photo.jpg" alt="藤沢のトリミングサロンのトリマーと店舗外観">
             </div>
             <div class="col-md-8 matchHeight">
                 <h3 class="text-uppercase">
                 {{ .Site.Params.intro.title }}</h3>
                 <p class="lead no-mg">{{ .Site.Params.intro.subtitle }}<br>
                 {{ .Site.Params.intro.subtitle2 }}<br>
-                {{ .Site.Params.intro.subtitle3 }}<br>
+                {{ .Site.Params.intro.subtitle3 }}
+ <!--                <br>
                 {{ .Site.Params.intro.subtitle4 }}
- <!--
+
                 <br><br>
                 {{ .Site.Params.intro.subtitle5 }}<i class='fa fa-gift'></i>
                 {{ .Site.Params.intro.subtitle6 }}
  -->
                 </p>
-                <p class="text-center">
+<!--                <p class="text-center">
                     {{ .Site.Params.intro.link_text }}
                 </p>
-<!--
+
                 <p class="text-center">
                     <a href="{{ .Site.Params.intro.link_url }}" class="btn btn-template-transparent-black btn-lg">{{ .Site.Params.intro.link_text }}</a>
                 </p>
