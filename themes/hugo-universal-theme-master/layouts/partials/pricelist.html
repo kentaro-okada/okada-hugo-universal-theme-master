@@ -7,8 +7,8 @@
         <thead class="text-uppercase">
           <tr>
           <th>犬種</th>
-          <th>マイクロバブルシャンプーコース</th>
-          <th>マイクロバブルシャンプー<br>＆カットコース</th>
+          <th>シャンプーコース</th>
+          <th>シャンプー<br>＆カットコース</th>
           </tr>
         </thead>
         <tbody>
@@ -23,19 +23,14 @@
             <td>¥5,500</td>
           </tr>
           <tr>
-            <td>ヨークシャー・テリア<br>マルチーズ<br>ポメラニアン<br>ペキニーズ<br>パピヨン<br>ジャック・ラッセル・テリア<br>パグ<br>ボストン・テリア<br>豆柴</td>
+            <td>ヨークシャー・テリア<br>マルチーズ<br>ポメラニアン<br>ペキニーズ<br>パピヨン<br>ジャック・ラッセル・テリア<br>パグ<br>ボストン・テリア</td>
             <td>¥4,500</td>
             <td>¥6,500</td>
           </tr>
           <tr>
-            <td>シー・ズー<br>ビション・フリーゼ<br>トイ・プードル<br>キャバリア・キング・チャールズ・スパニエル<br>ミニチュア・シュナウザー<br>ウエスト・ハイランド・ホワイト・テリア<br>フレンチ・ブルドック<br>柴犬<br>ウエルシュ・コーギー・ペンブローク</td>
+            <td>シー・ズー<br>ビション・フリーゼ<br>トイ・プードル<br>キャバリア・キング・チャールズ・スパニエル<br>ミニチュア・シュナウザー<br>ウエスト・ハイランド・ホワイト・テリア<br>フレンチ・ブルドック<br>ウエルシュ・コーギー・ペンブローク</td>
             <td>¥5,000</td>
             <td>¥7,000</td>
-          </tr>
-          <tr>
-            <td>シェットランド・シープドッグ<br>アメリカン・コッカー・スパニエル<br>イングリッシュ・コッカー・スパニエル</td>
-            <td>¥6,500</td>
-            <td>¥8,500</td>
           </tr>
           <!-- 
           <tr>
@@ -65,28 +60,37 @@
       <br>
       ※毛玉の多いワンちゃん、大きめのワンちゃん、毛量の多いワンちゃんは、追加料金をいただく場合があります。初回店頭で確認して事前にお伝えします。
       </p>
-      <h3 class="text-uppercase text-center">オプションメニュー</h3>
+      <br>
+      <div class="heading text-center">
+          <h2>オプションメニュー</h2>
+      </div>
+      <p class="text-center">歯磨き、足先バリカン、部分カット　各¥500</p>
       <table>
         <thead class="text-uppercase">
           <tr>
           <th>サイズ</th>
-          <th>シルクの泡パック<p class="normal no-mg">(シルク特有の保湿効果で美毛に)</p></th>
-          <th>うる艶トリートメント<br><p class="normal no-mg">(皮膚再生力向上、被毛に潤いでアンチエイジング)</p></th>
+          <th>うる艶トリートメント<br><p class="normal no-mg">(肌ケア＋被毛保湿。<br>アレルギーの子もOK)</p></th>
+          <th>シセルリノ美毛ケア<p class="normal no-mg">(超高濃度美容液ケア)</p></th>
           </tr>
         </thead>
         <tbody>
-        {{ $url := "/static/csv/option.csv" }}
-        {{ $sep := "," }}
-        {{ range $i, $r := getCSV $sep $url }}
           <tr>
-            <td>{{ index $r 0 }}</td>
-            <td>{{ index $r 1 }}</td>
-            <td>{{ index $r 2 }}</td>
+            <td>小型犬　短毛</td><td>¥1,250</td><td>-</td>
           </tr>
-        {{ end }}
+          <tr>
+            <td>小型犬　長毛</td><td>¥1,500</td><td>¥1,500</td>
+          </tr>
+          <tr>
+            <td>中型犬　短毛</td><td>¥1,750</td><td>-</td>
+          </tr>
+          <tr>
+            <td>中型犬　長毛</td><td>¥2,000</td><td>¥3,000</td>
+          </tr>
         </tbody>
       </table>
       <p class="pl-mg text-center">
+      ※シセルリノ（C-CELL'LINO）美毛ケアは、クレンジング→美容液シェンプー→トリートメント→アウトバストリートメントを行います。
+      <br>
       ※税抜き表示です。
     </div>
 </section>
