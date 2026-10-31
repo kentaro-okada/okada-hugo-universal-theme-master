@@ -1,0 +1,46 @@
+# ビルドはしない。public/ の中身をそのまま公開する
+[build]
+  publish = "public"
+  command = ""
+
+# 以前の Hugo のページは、トップページへ転送する
+[[redirects]]
+  from = "/blog/*"
+  to = "/"
+  status = 301
+[[redirects]]
+  from = "/posts/*"
+  to = "/"
+  status = 301
+[[redirects]]
+  from = "/categories/*"
+  to = "/"
+  status = 301
+[[redirects]]
+  from = "/tags/*"
+  to = "/"
+  status = 301
+[[redirects]]
+  from = "/page/*"
+  to = "/"
+  status = 301
+[[redirects]]
+  from = "/faq/*"
+  to = "/"
+  status = 301
+[[redirects]]
+  from = "/contact/*"
+  to = "/"
+  status = 301
+[[redirects]]
+  from = "/pay/*"
+  to = "/"
+  status = 301
+[[redirects]]
+  from = "/admin/*"
+  to = "/"
+  status = 301
+[[redirects]]
+  from = "/index.xml"
+  to = "/"
+  status = 301

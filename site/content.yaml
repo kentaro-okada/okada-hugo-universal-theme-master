@@ -1,0 +1,150 @@
+# BLUE PAWS トップページの文言と写真
+# - このファイルを編集すると、site/template.html から public/index.html が作られます。
+# - 改行したい場所は、文字列の中で改行してください（| を使った複数行の書き方）。
+# - 写真は public/ からの場所を書きます（例: img/site/b-chihuahua.jpg）。
+
+site:
+  title: BLUE PAWS（ブルーパウズ）｜藤沢・片瀬のトリミングサロン
+  description: 江ノ島駅・湘南江の島駅から徒歩5分のプライベートトリミングサロン。マンツーワンで、待ち時間もケージフリー。ほかのワンちゃんが苦手な子も安心です。
+  keywords: 藤沢,片瀬,江ノ島,トリミングサロン,ドッグサロン,ペットサロン
+  url: https://bluepaws.jp/
+  og_image: img/site/hero-toypoodle.jpg
+  logo: img/bp-logo2024-08-13.jpeg
+  line_url: https://line.me/R/ti/p/%40zwb3497w
+  instagram_url: https://www.instagram.com/trimmingsalon._.bluepaws/
+  reviews_url: https://www.google.com/maps/search/?api=1&query=BLUE+PAWS+%E3%83%96%E3%83%AB%E3%83%BC%E3%83%91%E3%82%A6%E3%82%BA&query_place_id=ChIJvZsl6_9OGGARuoy5hkOVUrg
+  # 検索エンジン向けの営業時間（Mo=月 Tu=火 We=水 Th=木 Fr=金 Sa=土 Su=日）
+  opening_hours: Mo,Tu,We,Fr,Sa 09:00-17:00
+  maps_url: https://www.google.com/maps/search/?api=1&query=BLUE+PAWS+%E3%83%96%E3%83%AB%E3%83%BC%E3%83%91%E3%82%A6%E3%82%BA&query_place_id=ChIJvZsl6_9OGGARuoy5hkOVUrg
+
+hero:
+  area: 藤沢・片瀬 ／ 江ノ島駅 徒歩5分
+  headline: |
+    One dog.
+    One groomer.
+  catch: |
+    イヌのキモチを大切に、
+    マンツーワンでていねいに。
+  lead: プライベートサロンだから、待ち時間もケージフリーでのんびり。ほかのワンちゃんが苦手な子も安心して過ごせます。
+  photos:
+    - src: img/site/hero-schnauzer.jpg
+      name: ミニチュア・シュナウザー
+    - src: img/site/hero-maltipoo-1.jpg
+      name: マルプー
+    - src: img/site/hero-maltipoo-2.jpg
+      name: マルプー
+    - src: img/site/hero-toypoodle.jpg
+      name: トイプードル
+
+concept:
+  heading: |
+    どんなワンちゃんにも、
+    やさしい時間を。
+  points:
+    - title: マンツーワン
+      body: 受付からお渡しまで、トリマー兼オーナーがひとりで担当。ワンちゃんの性格にあわせて進めます。
+    - title: ケージフリー
+      body: 待ち時間もケージに入れず、のんびり過ごせます。同じ時間帯にほかのワンちゃんはいません。
+    - title: お手入れしやすいカット
+      body: かわいさはそのままに、おうちでのお手入れが楽になるスタイルをご提案します。
+
+menu:
+  heading: メニュー・料金
+  shampoo: 爪切り、耳掃除、肛門腺絞り、バリカン（足裏・肛門まわり・お腹）、足まわり・ヒゲカット、シャンプー、ドライ
+  cut: シャンプーコースのあとに、ハサミとバリカンでカットします。
+  tiers:
+    - shampoo_price: ¥4,000
+      cut_price: ¥6,500
+      breeds:
+        - name: チワワ
+          photo: img/site/b-chihuahua.jpg
+    - shampoo_price: ¥4,500
+      cut_price: ¥7,000
+      breeds:
+        - name: ミニチュア・ダックスフンド
+          photo: img/site/b-dachshund.jpg
+    - shampoo_price: ¥5,000
+      cut_price: ¥7,500
+      breeds:
+        - name: ヨークシャー・テリア
+          photo: img/site/b-yorkie.jpg
+        - name: マルチーズ
+          photo: img/site/b-maltese.jpg
+        - name: ポメラニアン
+          photo: img/site/b-pomeranian.jpg
+        - name: パピヨン
+          photo: img/site/b-papillon.jpg
+    - shampoo_price: ¥5,500
+      cut_price: ¥8,000
+      breeds:
+        - name: シー・ズー
+          photo: img/site/b-shihtzu.jpg
+        - name: トイ・プードル
+          photo: img/site/b-toypoodle.jpg
+        - name: ミニチュア・シュナウザー
+          photo: img/site/b-schnauzer.jpg
+  options: 歯磨き ¥500 ／ 部分カット ¥500 ／ 足先バリカン ¥700 ／ デザインカット ¥1,500 ／ シルクパック ¥1,000〜 ／ うる艶トリートメント ¥2,000〜 ／ シセルリノ美毛ケア ¥2,000〜
+  notes:
+    - 消費税はいただきません。
+    - ミックスの子は、体格・毛質の近い犬種の料金です。
+    - 毛玉や毛量が多い子、大きめの子や噛み癖のある子は追加料金をいただく場合があります。
+
+links:
+  instagram_text: 最新の仕上がりは Instagram で
+  instagram_button: Instagram を見る
+  reviews_text: お客さまの声は Google の口コミで
+  reviews_button: Google で口コミを見る
+
+first:
+  heading: はじめての方へ
+  steps:
+    - title: LINEで予約
+      body: 犬種・年齢・ご希望をお知らせください。初回はシルクパックをサービスします。
+    - title: ご来店・カウンセリング
+      body: 体調や苦手なこと、仕上がりのイメージを伺います。写真を見せていただくのもおすすめです。
+    - title: マンツーワンでトリミング
+      body: その子のペースに合わせて進めます。待ち時間もケージフリーです。
+    - title: お迎え
+      body: 当日の様子と、おうちでのお手入れのコツをお伝えします。
+  notices_heading: ご予約の前にご確認ください
+  notices:
+    - 1年以内の混合ワクチン・狂犬病予防接種、ノミ・ダニ対策をお願いします。
+    - 持病や噛み癖のある子は、ご予約時にお知らせください。
+    - 変更・キャンセルは前日までにお願いします。当日キャンセルは ¥5,000 をいただきます。
+
+staff:
+  heading: トリマー兼オーナー
+  name: 岡田 有紀
+  bio: 兵庫県生まれ、東京育ち、片瀬在住。会社員・主婦を経てトリマーに。愛犬プーの超こわがりが、トリマーになったきっかけです。自宅ではオーストラリアン・ラブラドゥードルのプーとラッテ、猫のチャイと暮らしています。
+  note: 看板犬のプーとラッテは、現在は出勤していません。
+  photos:
+    - src: img/testimonials/yuki.jpg
+      name: 岡田 有紀
+      alt: トリマー兼オーナーの岡田有紀
+    - src: img/site/staff-pooh.jpg
+      name: 看板犬 プー
+      alt: 看板犬のプー
+    - src: img/site/staff-latte.jpg
+      name: 看板犬 ラッテ
+      alt: 看板犬のラッテ
+
+access:
+  heading: アクセス
+  address: 神奈川県藤沢市片瀬3-1-29
+  directions: 江ノ島駅・湘南江の島駅から藤沢駅方面へ徒歩5分。片瀬郵便局の斜め向かい、青い外観のお店です。お車は店頭の路肩に一時停車できます。
+  maps_text: Googleマップで道順を見る
+  hours: 9:00〜17:00（完全予約制）
+  closed: 木曜・日曜・祝日
+  payment: 現金、クレジットカード（VISA ／ Mastercard ／ JCB）
+  photo: img/site/shop.jpg
+  photo_alt: 青い外観のBLUE PAWSの入口
+
+booking:
+  heading: ご予約・お問い合わせはLINEから
+  hours: 受付 9:00〜17:00 ／ 定休日 木曜・日曜・祝日　LINEのお問い合わせは、いつでもどうぞ。
+  offer: はじめての方は、LINEからの初回予約でシルクパックをサービスします。
+  line_button: LINEで予約する
+
+footer:
+  registration: 神奈川県第一種動物取扱業登録 動保第220290号（有効期限 2028年1月9日）／ 動物取扱責任者 岡田有紀
+  area: © BLUE PAWS　藤沢・辻堂・鎌倉・茅ヶ崎・鵠沼海岸・腰越のトリミングサロン

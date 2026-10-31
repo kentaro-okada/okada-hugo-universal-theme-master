@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{site.title}}</title>
+<meta name="description" content="{{site.description}}">
+<meta name="keywords" content="{{site.keywords}}">
+<link rel="canonical" href="{{site.url}}">
+<meta property="og:type" content="website">
+<meta property="og:title" content="{{site.title}}">
+<meta property="og:description" content="{{site.description}}">
+<meta property="og:url" content="{{site.url}}">
+<meta property="og:image" content="{{site.url}}{{site.og_image}}">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="google-site-verification" content="RUXuSkeMJ77FDWIyHe3j3DxRWJD6n9TFg7kdJ9YhYQ0">
+<link rel="icon" href="/img/favicon.ico">
+<link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&amp;family=Zen+Kaku+Gothic+New:wght@400;500;700&amp;display=swap" rel="stylesheet">
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-T48G9PD');</script>
+<script type="application/ld+json">
+{{&_jsonld}}
+</script>
+<style>
+:root{
+  --ink:#0F1B3D;      /* 紺：文字・線 */
+  --stripe:#C9D3EE;   /* 壁のストライプの青 */
+  --line:#DCE2F1;     /* 細い線 */
+  --tint:#F2F4FB;     /* 淡い背景 */
+  --muted:#3E4A6B;    /* 補足の文字 */
+  --ribbon:#E2580C;   /* リボンのオレンジ（線・飾り） */
+  --ribbon-deep:#C94A08; /* 白文字を載せるオレンジ */
+  --display:'Bricolage Grotesque', sans-serif;
+  --body:'Zen Kaku Gothic New', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif;
+  /* レイアウト：サロンの壁のストライプを背景の骨格にし、紺の線とオレンジのリボンで区切る */
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+[id]{scroll-margin-top:72px}  /* 固定ヘッダーに見出しが隠れないように */
+body{margin:0;background:#FFFFFF;color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.8;-webkit-text-size-adjust:100%}
+img{max-width:100%;height:auto}
+a{color:var(--ink)}a:hover{color:var(--ribbon)}
+a:focus-visible{outline:3px solid var(--ribbon);outline-offset:3px}
+h1,h2,h3{text-wrap:balance}
+.wrap{max-width:1320px;margin:0 auto;padding:0 24px}
+.bar{display:block;width:48px;height:6px;background:var(--ribbon)}
+.h2{margin:0;font-size:clamp(28px,3.4vw,44px);line-height:1.4}
+.btn{display:inline-flex;align-items:center;gap:8px;min-height:44px;border-radius:999px;font-weight:700;text-decoration:none;white-space:nowrap}
+.btn svg{flex:none}
+.stripes{background:repeating-linear-gradient(90deg,#FFFFFF 0 56px,var(--stripe) 56px 112px)}
+.stripes-soft{background:repeating-linear-gradient(90deg,#FFFFFF 0 56px,#EEF1FA 56px 112px)}
+.photo{width:100%;height:auto;aspect-ratio:1;object-fit:cover;display:block}
+/* ヘッダー */
+.site-header{position:sticky;top:0;z-index:5;background:rgba(255,255,255,.94);border-bottom:1px solid var(--line);backdrop-filter:saturate(1.2) blur(6px)}
+.site-header .wrap{padding:8px 16px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;min-width:0;white-space:nowrap}
+.logo img{width:44px;height:44px;object-fit:cover;border-radius:50%}
+.logo span{font-family:var(--display);font-weight:800;font-size:22px;letter-spacing:.02em}
+.nav{display:flex;align-items:center;gap:8px;font-size:14px;flex:none}
+.btn-ig{background:var(--ink);color:#FFFFFF;padding:10px 20px}
+.btn-ig:hover{color:#FFFFFF;background:#22305A}
+.btn-line{background:var(--ribbon-deep);color:#FFFFFF;padding:10px 20px}
+.btn-line:hover{color:#FFFFFF;background:#A93E06}
+/* ヒーロー */
+.hero{border-bottom:1px solid var(--line);overflow:hidden}
+.hero .wrap{padding-top:40px;padding-bottom:64px;display:flex;flex-wrap:wrap;gap:48px;align-items:center}
+.hero-text{flex:1 1 540px;min-width:0;display:flex;flex-direction:column;gap:20px}
+.area{margin:0;align-self:flex-start;background:var(--ink);color:#FFFFFF;padding:6px 16px;font-size:13px;letter-spacing:.08em}
+.hero h1{margin:0;font-family:var(--display);font-weight:800;font-size:clamp(44px,10vw,152px);line-height:.88;letter-spacing:-.03em}
+.catch{margin:0;font-size:clamp(20px,2.4vw,32px);font-weight:700;line-height:1.5;background:#FFFFFF;align-self:flex-start;padding:4px 12px}
+.lead{margin:0;max-width:34em;background:#FFFFFF;padding:12px 16px;border:1px solid var(--line)}
+.hero-photos{flex:1 1 520px;min-width:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;align-items:start}
+.card{margin:0;background:#FFFFFF;padding:10px 10px 12px;border:2px solid var(--ink);box-shadow:8px 8px 0 var(--ink);display:flex;flex-direction:column;gap:8px}
+.card figcaption{font-weight:700;font-size:14px}
+.card:nth-child(1){transform:rotate(-4deg)}
+.card:nth-child(2){transform:rotate(3deg);margin-top:48px}
+.card:nth-child(3){transform:rotate(2deg);margin-top:-24px}
+.card:nth-child(4){transform:rotate(-3deg);margin-top:24px}
+/* コンセプト */
+.section{padding:64px 0}
+.section .wrap{display:flex;flex-direction:column;gap:32px}
+.head{display:flex;flex-direction:column;gap:16px}
+.points{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:0 32px}
+.points div{padding:20px 0 24px;border-top:2px solid var(--ink);display:flex;flex-direction:column;gap:10px}
+.points h3{margin:0;font-size:22px}
+.points p{margin:0}
+/* メニュー・料金 */
+.menu{background:var(--tint)}
+.menu-top{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:24px}
+.course{display:flex;flex-wrap:wrap;gap:12px 32px;font-size:15px;max-width:760px}
+.course p{margin:0;flex:1 1 300px}
+.tiers{display:flex;flex-wrap:wrap;gap:24px}
+.tier{min-width:0;background:#FFFFFF;border:1px solid var(--stripe);padding:20px;display:flex;flex-direction:column;gap:16px}
+.breeds{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:16px}
+.breeds figure{margin:0;display:flex;flex-direction:column;gap:10px}
+.breeds figcaption{font-size:20px;font-weight:700;line-height:1.4;min-height:2.8em;display:flex;align-items:flex-end}
+.price{margin:0;border-top:2px solid var(--ink);padding-top:14px;display:flex;flex-wrap:wrap;gap:8px 32px;font-variant-numeric:tabular-nums}
+.price div{display:flex;align-items:baseline;gap:12px}
+.price dt{font-size:14px}
+.price dd{margin:0;font-family:var(--display);font-size:24px;font-weight:800;line-height:1.2}
+.extras{display:flex;flex-direction:column;gap:10px;font-size:15px}
+.extras p{margin:0}
+.notes{margin:0;padding-left:1.2em;display:flex;flex-direction:column;gap:4px;font-size:14px;color:var(--muted)}
+/* Instagram と口コミ */
+.outlinks{padding:32px 0;border-top:1px solid var(--line)}
+.outlinks .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px}
+.outlink{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px 20px;background:#FFFFFF;border:1px solid var(--stripe);padding:16px 20px}
+.outlink p{margin:0;font-weight:700}
+.btn-ig-l{background:var(--ink);color:#FFFFFF;padding:12px 22px}
+.btn-ig-l:hover{color:#FFFFFF;background:#22305A}
+.btn-rev{background:#FFFFFF;color:var(--ink);padding:10px 20px;border:2px solid var(--ink)}
+/* はじめての方へ */
+.first{background:var(--ink);color:#FFFFFF}
+.first .bar{background:#FF8A4C}
+.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px}
+.steps li{border-top:2px solid var(--ribbon);padding-top:20px;display:flex;flex-direction:column;gap:8px}
+.steps .num{font-size:14px;color:#FF8A4C;font-weight:700}
+.steps strong{font-size:19px}
+.steps span:last-child{color:var(--stripe)}
+.notice{border:1px solid #3A4D85;padding:28px 32px;display:flex;flex-direction:column;gap:12px}
+.notice h3{margin:0;font-size:18px}
+.notice ul{margin:0;padding-left:1.2em;display:flex;flex-direction:column;gap:6px;color:var(--line)}
+/* トリマー紹介 */
+.staff-top{display:flex;flex-wrap:wrap;gap:24px 56px;align-items:flex-end}
+.staff-top .head{flex:1 1 360px;min-width:0}
+.staff-bio{flex:2 1 520px;min-width:0;display:flex;flex-direction:column;gap:8px}
+.staff-bio p{margin:0;max-width:40em}
+.staff-photos{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;max-width:900px}
+.staff-photos figure{margin:0;display:flex;flex-direction:column;gap:8px}
+.staff-photos img{border-radius:200px 200px 0 0;object-position:center 30%}
+.staff-photos figcaption{font-size:14px;font-weight:700}
+.small{margin:0;font-size:14px;color:var(--muted)}
+/* アクセス */
+.access{border-top:1px solid var(--line)}
+.access .wrap{flex-direction:row;flex-wrap:wrap;gap:40px;align-items:flex-start}
+.access-card{flex:1 1 420px;min-width:0;background:#FFFFFF;padding:28px 24px;border:1px solid var(--line);display:flex;flex-direction:column;gap:16px}
+.access-card p{margin:0}
+.address{font-size:20px;font-weight:700}
+.access dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:6px 20px}
+.access dt{font-weight:700}
+.access dd{margin:0}
+.shop{flex:1 1 420px;min-width:0;margin:0;display:flex;flex-direction:column;gap:8px}
+.shop img{width:100%;max-width:480px;aspect-ratio:3/4;object-fit:cover;display:block;border:1px solid var(--line)}
+/* PCでは、外観写真の高さを左のアクセス枠にそろえる */
+@media (min-width:940px){
+  .access .wrap{align-items:stretch}
+  .shop img{flex:1 1 0;min-height:0;height:auto;aspect-ratio:auto;max-width:none}
+}
+/* 予約の帯とフッター */
+.booking{background:var(--ribbon-deep);color:#FFFFFF;padding:48px 0}
+.booking .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:32px}
+.booking-text{flex:1 1 480px;min-width:0;display:flex;flex-direction:column;gap:8px}
+.booking h2{margin:0;font-size:clamp(26px,3vw,36px);line-height:1.4}
+.booking p{margin:0}
+.booking-btns{flex:0 1 auto;display:flex;flex-wrap:wrap;gap:16px;align-items:center}
+.btn-book{background:#FFFFFF;color:var(--ink);padding:20px 40px;font-weight:700;font-size:18px;text-decoration:none;border:2px solid var(--ink);box-shadow:6px 6px 0 var(--ink)}
+.btn-ig-o{color:#FFFFFF;padding:18px 28px;font-size:16px;border:2px solid #FFFFFF;border-radius:0}
+.btn-ig-o:hover{color:var(--ink);background:#FFFFFF}
+footer{background:var(--ink);color:var(--stripe);padding:40px 0;font-size:13px}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px}
+footer p{margin:0}
+/* スマホ */
+@media (max-width:560px){
+  .btn-ig .label{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+  .nav .btn{padding:10px 14px}
+  .logo img{width:36px;height:36px}
+  .logo span{font-size:18px}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T48G9PD" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="#top" class="logo"><img src="/{{site.logo}}" alt="BLUE PAWS ロゴ" width="44" height="44"><span>BLUE PAWS</span></a>
+    <nav class="nav" aria-label="外部リンク">
+      <a href="{{site.instagram_url}}" class="btn btn-ig" aria-label="Instagram"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="0.6" fill="currentColor"></circle></svg><span class="label">Instagram</span></a>
+      <a href="{{site.line_url}}" class="btn btn-line">LINEで予約</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section id="top" class="hero stripes">
+  <div class="wrap">
+    <div class="hero-text">
+      <p class="area">{{hero.area}}</p>
+      <h1>{{hero.headline}}</h1>
+      <p class="catch">{{hero.catch}}</p>
+      <p class="lead">{{hero.lead}}</p>
+    </div>
+    <div class="hero-photos">
+      {{#hero.photos}}<figure class="card"><img class="photo" src="/{{src}}" alt="{{name}}" width="540" height="540"><figcaption>{{name}}</figcaption></figure>
+      {{/hero.photos}}
+    </div>
+  </div>
+</section>
+
+<section id="concept" class="section">
+  <div class="wrap">
+    <div class="head"><span class="bar" aria-hidden="true"></span><h2 class="h2">{{concept.heading}}</h2></div>
+    <div class="points">
+      {{#concept.points}}<div><h3>{{title}}</h3><p>{{body}}</p></div>
+      {{/concept.points}}
+    </div>
+  </div>
+</section>
+
+<section id="trimming-menu" class="section menu">
+  <div class="wrap">
+    <div class="menu-top">
+      <div class="head"><span class="bar" aria-hidden="true"></span><h2 class="h2">{{menu.heading}}</h2></div>
+      <div class="course">
+        <p><strong>シャンプー</strong>　{{menu.shampoo}}</p>
+        <p><strong>シャンプー＆カット</strong>　{{menu.cut}}</p>
+      </div>
+    </div>
+    <div class="tiers">
+      {{#menu.tiers}}<div class="tier" style="flex: {{flex}}">
+        <div class="breeds">
+          {{#breeds}}<figure><figcaption>{{name}}</figcaption><img class="photo" src="/{{photo}}" alt="{{name}}" width="300" height="300" loading="lazy"></figure>
+          {{/breeds}}
+        </div>
+        <dl class="price">
+          <div><dt>シャンプー</dt><dd>{{shampoo_price}}</dd></div>
+          <div><dt>シャンプー＆カット</dt><dd>{{cut_price}}</dd></div>
+        </dl>
+      </div>
+      {{/menu.tiers}}
+    </div>
+    <div class="extras">
+      <p><strong>オプション</strong>　{{menu.options}}</p>
+      <ul class="notes">
+        {{#menu.notes}}<li>{{.}}</li>
+        {{/menu.notes}}
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="outlinks stripes" aria-label="Instagram と Google の口コミ">
+  <div class="wrap">
+    <div class="grid">
+      <div class="outlink"><p>{{links.instagram_text}}</p><a href="{{site.instagram_url}}" class="btn btn-ig-l"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="0.6" fill="currentColor"></circle></svg>{{links.instagram_button}}</a></div>
+      <div class="outlink"><p>{{links.reviews_text}}</p><a href="{{site.reviews_url}}" class="btn btn-rev"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M12 3.5l2.6 5.3 5.8.8-4.2 4.1 1 5.8L12 16.8l-5.2 2.7 1-5.8-4.2-4.1 5.8-.8z"></path></svg>{{links.reviews_button}}</a></div>
+    </div>
+  </div>
+</section>
+
+<section id="first" class="section first">
+  <div class="wrap">
+    <div class="head"><span class="bar" aria-hidden="true"></span><h2 class="h2">{{first.heading}}</h2></div>
+    <ol class="steps">
+      {{#first.steps}}<li><span class="num">STEP {{@num}}</span><strong>{{title}}</strong><span>{{body}}</span></li>
+      {{/first.steps}}
+    </ol>
+    <div class="notice">
+      <h3>{{first.notices_heading}}</h3>
+      <ul>
+        {{#first.notices}}<li>{{.}}</li>
+        {{/first.notices}}
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="staff" class="section">
+  <div class="wrap">
+    <div class="staff-top">
+      <div class="head"><span class="bar" aria-hidden="true"></span><h2 class="h2">{{staff.heading}}</h2></div>
+      <div class="staff-bio"><p><strong>{{staff.name}}</strong></p><p>{{staff.bio}}</p></div>
+    </div>
+    <div class="staff-photos">
+      {{#staff.photos}}<figure><img class="photo" src="/{{src}}" alt="{{alt}}" width="280" height="280" loading="lazy"><figcaption>{{name}}</figcaption></figure>
+      {{/staff.photos}}
+    </div>
+    <p class="small">{{staff.note}}</p>
+  </div>
+</section>
+
+<section id="access" class="section access stripes-soft">
+  <div class="wrap">
+    <div class="access-card">
+      <span class="bar" aria-hidden="true"></span>
+      <h2 class="h2">{{access.heading}}</h2>
+      <p class="address">{{access.address}}</p>
+      <p>{{access.directions}}</p>
+      <a href="{{site.maps_url}}" style="align-self:flex-start;font-weight:700">{{access.maps_text}}</a>
+      <dl>
+        <dt>営業時間</dt><dd>{{access.hours}}</dd>
+        <dt>定休日</dt><dd>{{access.closed}}</dd>
+        <dt>お支払い</dt><dd>{{access.payment}}</dd>
+      </dl>
+    </div>
+    <figure class="shop"><img src="/{{access.photo}}" alt="{{access.photo_alt}}" width="480" height="640" loading="lazy"></figure>
+  </div>
+</section>
+
+<section class="booking">
+  <div class="wrap">
+    <div class="booking-text">
+      <h2>{{booking.heading}}</h2>
+      <p>{{booking.hours}}</p>
+      <p><strong>{{booking.offer}}</strong></p>
+    </div>
+    <div class="booking-btns">
+      <a href="{{site.line_url}}" class="btn-book">{{booking.line_button}}</a>
+      <a href="{{site.instagram_url}}" class="btn btn-ig-o"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="0.6" fill="currentColor"></circle></svg>{{links.instagram_button}}</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>{{footer.registration}}</p>
+    <p>{{footer.area}}</p>
+  </div>
+</footer>
+
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '2090918967812279');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none" alt="" src="https://www.facebook.com/tr?id=2090918967812279&amp;ev=PageView&amp;noscript=1"></noscript>
+<script>
+var yahoo_retargeting_id = '01APARI6FL';
+var yahoo_retargeting_label = '';
+var yahoo_retargeting_page_type = '';
+var yahoo_retargeting_items = [{item_id: '', category_id: '', price: '', quantity: ''}];
+</script>
+<script src="https://b92.yahoo.co.jp/js/s_retargeting.js"></script>
+<script>
+var yahoo_ss_retargeting_id = 1000417478;
+var yahoo_sstag_custom_params = window.yahoo_sstag_params;
+var yahoo_ss_retargeting = true;
+</script>
+<script src="https://s.yimg.jp/images/listing/tool/cv/conversion.js"></script>
+<noscript><div style="display:inline;"><img height="1" width="1" style="border-style:none;" alt="" src="https://b97.yahoo.co.jp/pagead/conversion/1000417478/?guid=ON&amp;script=0&amp;disvt=false"></div></noscript>
+</body>
+</html>
