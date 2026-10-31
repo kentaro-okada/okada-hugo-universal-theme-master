@@ -43,6 +43,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
+[id]{scroll-margin-top:72px}  /* 固定ヘッダーに見出しが隠れないように */
 body{margin:0;background:#FFFFFF;color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.8;-webkit-text-size-adjust:100%}
 img{max-width:100%;height:auto}
 a{color:var(--ink)}a:hover{color:var(--ribbon)}
@@ -148,6 +149,11 @@ h1,h2,h3{text-wrap:balance}
 .shop{flex:1 1 420px;min-width:0;margin:0;display:flex;flex-direction:column;gap:8px}
 .shop img{width:100%;max-width:480px;aspect-ratio:3/4;object-fit:cover;display:block;border:1px solid var(--line)}
 .shop figcaption{font-size:14px;background:#FFFFFF;align-self:flex-start;padding:2px 8px}
+/* PCでは、外観写真の高さを左のアクセス枠にそろえる */
+@media (min-width:940px){
+  .access .wrap{align-items:stretch}
+  .shop img{flex:1 1 0;min-height:0;height:auto;aspect-ratio:auto;max-width:none}
+}
 /* 予約の帯とフッター */
 .booking{background:var(--ribbon-deep);color:#FFFFFF;padding:48px 0}
 .booking .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:32px}
@@ -210,7 +216,7 @@ footer p{margin:0}
   </div>
 </section>
 
-<section id="price" class="section menu">
+<section id="trimming-menu" class="section menu">
   <div class="wrap">
     <div class="menu-top">
       <div class="head"><span class="bar" aria-hidden="true"></span><h2 class="h2">{{menu.heading}}</h2></div>
